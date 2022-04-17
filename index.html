@@ -18,6 +18,17 @@
            <img src="images/myphulogo.png" alt="myphulogo"  class="myphulogo">
           
             <nav>
+              <ul id="menuList1">
+                <li><a href="#home-home">Home</a></li>
+                <li><a href="#home-howtouse">How To Use</a></li>
+                <li><a href="#ourservices">Our Services</a></li>                    
+                <li><a href="#partnerships">Partnerships </a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+               </ul>
+            </nav>
+
+            <nav id="menulist2">
               <ul id="menuList">
                 <li><a href="#home-home">Home</a></li>
                 <li><a href="#home-howtouse">How To Use</a></li>
@@ -27,7 +38,7 @@
                 <li><a href="contactus.html">Contact Us</a></li>
                </ul>
             </nav>
-          
+
             <img src="images/menu.png" alt="menu-icon" class="menu-icon" onclick="togglemenu(document.getElementById('menuList').style.display='block')" id="menu-icon" >
            
         </div>
@@ -358,55 +369,44 @@
 
 
 
-<script>
+    <script>
 
-//Get the button:
-mybutton = document.getElementById("backtotopbtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-</script>
+      //Get the button:
+      mybutton = document.getElementById("backtotopbtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+      
+      </script>
 
 <!------>
 
 <script>
-    
+  
     window.addEventListener('mouseup', function(event){
       var box = document.getElementById('menuList');
       if(event.target != box && event.target.parentNode != box){
-        box.style.display = 'none';
+        menuList.style.maxHeight = "0px";
       }
     });
+</script>
 
 
 
-    {
-      var hidediv=document.getElementById('hh');
-      document.onclick=function(div)
-      {
-        if(div.target.id !=='hh')
-        {
-          hidediv.style.display='none';
-        }
-      };
-    };
-
-  </script>
 
 
 
@@ -434,11 +434,19 @@ function topFunction() {
   </script>
 
 
+<script>
 
+var w = document.documentElement.clientWidth || window.innerWidth;
+if (w <= 480) {
+// Probably mobile
+} else {
+// Probably desktop
+}
+
+</script>
 
 
 
 <!--END OF JS. CODE FOR MENU-->
 
 </body>
-</html>

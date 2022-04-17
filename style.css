@@ -129,7 +129,21 @@ html{
 
     }
 
+    #menulist2{
+        display: none;
+    }
 
+      
+    
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    #menuList1{
+        display: none;
+    }
+    #menulist2{
+        display: block;
+    }
+}
     /*END OF MENU CODE AND HEADER IMAGE & TEXT*/
 
 
@@ -942,8 +956,9 @@ html{
         
               
     }
-
+ 
     #menuList{
+       
         overflow: hidden;
         transition: 0.5s;
         width: 50%;
@@ -953,12 +968,14 @@ html{
         
     }
 
+   
     .myphulogo{
     width: 50px;
     cursor: pointer;
     
     }
 
+   
     .maintext{
     width: 80%;
     height: 30px;
