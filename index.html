@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <link rel="manifest" href="/manifest.json">
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#005C97">
+  <link rel="icon" type="image/x-icon" href="favicon.ico" >
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+
+   <meta name="viewport" content="width=device-width, initial scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
   <title>
     MyPHU
@@ -28,7 +44,9 @@
                </ul>
             </nav>
 
-            <nav id="menulist2">
+          <div class="toggle" id="togglebg"></div><div id="toggle" ></div></div>
+          <div id="menulist2">
+            <nav>
               <ul id="menuList">
                 <li><a href="#home-home">Home</a></li>
                 <li><a href="#home-howtouse">How To Use</a></li>
@@ -36,10 +54,10 @@
                 <li><a href="#partnerships">Partnerships </a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
-               </ul>
+              </ul>
             </nav>
-
-            <img src="images/menu.png" alt="menu-icon" class="menu-icon" onclick="togglemenu(document.getElementById('menuList').style.display='block')" id="menu-icon" >
+      
+          </div>
            
         </div>
 
@@ -393,60 +411,59 @@
       
       </script>
 
-<!------>
+
+
+
+
+
+<!----------MENU JS---------->
 
 <script>
-  
-    window.addEventListener('mouseup', function(event){
-      var box = document.getElementById('menuList');
-      if(event.target != box && event.target.parentNode != box){
-        menuList.style.maxHeight = "0px";
+  const toggle = document.getElementById('toggle');
+  const menulist2 = document.getElementById('menulist2')
+  toggle.onclick = function(){
+      toggle.classList.toggle('active');
+      menulist2.classList.toggle('active')
+  }
+
+  document.onclick = function(e){
+      if(e.target.id !== 'menulist2' && e.target.id !== 'toggle'){
+        toggle.classList.remove('active');
+        menulist2.classList.remove('active');  
       }
-    });
+  }
+
+
+  toggle.onlick = function(){
+    toggle.classList.toggle('active');
+    menulist2.classList.toggle('active'); 
+  }
+
+
 </script>
 
 
 
 
 
-
-
-
-<!-------------------------START OF JS. CODE FOR MENU-------------------->
-  <script>
-
-      var menuList = document.getElementById("menuList");
-
-      menuList.style.maxHeight = "0px";
-
-      function togglemenu() {
-          
-          if(menuList.style.maxHeight == "0px")
-            {
-              menuList.style.maxHeight = "250px";
-            }
-          else
-            {
-              menuList.style.maxHeight = "0px";
-            }
-      }
-
-  </script>
+<script>
+  if ('serviceWorker' in navigator) {
+     console.log("Will the service worker register?");
+     navigator.serviceWorker.register('service-worker.js')
+       .then(function(reg){
+         console.log("Yes, it did.");
+      }).catch(function(err) {
+         console.log("No it didn't. This happened:", err)
+     });
+  }
+ </script>
 
 
 <script>
-
-var w = document.documentElement.clientWidth || window.innerWidth;
-if (w <= 480) {
-// Probably mobile
-} else {
-// Probably desktop
-}
-
+  if ('serviceWorker' in navigator) { navigator.serviceWorker.register('/service-worker.js') }
 </script>
 
 
-
-<!--END OF JS. CODE FOR MENU-->
 
 </body>
+</html>
