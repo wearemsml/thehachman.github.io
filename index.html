@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="theme-color" content="#005C97">
   <link rel="icon" type="image/x-icon" href="favicon.ico" >
-
+  <script src="https://kit.fontawesome.com/5a9a6aaab9.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
@@ -37,7 +37,31 @@
               <ul id="menuList1">
                 <li><a href="#home-home">Home</a></li>
                 <li><a href="#home-howtouse">How To Use</a></li>
-                <li><a href="#ourservices">Our Services</a></li>                    
+
+                <div class="dropdown">
+                  <button class="dropbtn">Our Services <i class="fa-solid fa-circle-chevron-down"></i></button>
+                  <div class="dropdown-content">
+                    <a href="optometry.html">eyes & glasses</a>
+                    <a href="dental.html">teeth</a>
+                    <a href="dermatology.html">skin</a>
+                    <a href="cosmetics.html"> cosmetics</a>
+                    <a href="fitnessandnutrition.html"> fitness & nutrition</a>
+                    <a href="pregnancy.html"> pregnancy</a>
+                    <a href="physiotherapy">body pains </a>
+                    <a href="mentalhealth.html"> mental health ❤️</a>
+                    <a href="childrenshealth.html"> children's health ❤️</a>
+                    <a href="diabetes.html"> diabetes</a>
+                    <a href="bphbp.html"> BP/ HBP</a>
+                    <a href="respiratorydiseases.html"> respiratory diseases</a>
+                    <a href="stis.html"> STIs</a>
+                    <a href="labtests.html"> lab tests</a>
+                    <a href="urology.html"> urology</a>
+                    <a href="financialhealth.html"> Financial Health</a>
+                    <a href="healthtech.html"> Health Tech</a>      
+                  </div>
+                </div>
+
+                                 
                 <li><a href="#partnerships">Partnerships </a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
@@ -46,6 +70,7 @@
 
           <div class="toggle" id="togglebg"></div><div id="toggle" ></div></div>
           <div id="menulist2">
+          
             <nav>
               <ul id="menuList">
                 <li><a href="#home-home">Home</a></li>
@@ -110,12 +135,42 @@
 
 
 
+  
+  
+  
+  
+
+
 <!-- OUR SERVICES-->
 
 <div class="ourservicesBG">
+  
   <section class="ourservices" id="ourservices">
     <h1>our services</h1>
-   
+  
+    <div class="dropdown2">
+      <button onclick="myFunction()" class="dropbtn2">View List <i class="fa-solid fa-circle-chevron-down"></i></button>
+      <div id="myDropdown2" class="dropdown2-content">
+        <a href="optometry.html">eyes & glasses</a>
+        <a href="dental.html">teeth</a>
+        <a href="dermatology.html">skin</a>
+        <a href="cosmetics.html"> cosmetics</a>
+        <a href="fitnessandnutrition.html"> fitness & nutrition</a>
+        <a href="pregnancy.html"> pregnancy</a>
+        <a href="physiotherapy">body pains </a>
+        <a href="mentalhealth.html"> mental health ❤️</a>
+        <a href="childrenshealth.html"> children's health ❤️</a>
+        <a href="diabetes.html"> diabetes</a>
+        <a href="bphbp.html"> BP/ HBP</a>
+        <a href="respiratorydiseases.html"> respiratory diseases</a>
+        <a href="stis.html"> STIs</a>
+        <a href="labtests.html"> lab tests</a>
+        <a href="urology.html"> urology</a>
+        <a href="financialhealth.html"> Financial Health</a>
+        <a href="healthtech.html"> Health Tech</a>
+        </div>
+    </div>
+    
     
     <div class="ourservicesrow">
       <div class="ourservices-col">
@@ -447,6 +502,33 @@
 
 
 <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn2')) {
+      var dropdowns = document.getElementsByClassName("dropdown2-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+
+
+
+
+
+
+<script>
   if ('serviceWorker' in navigator) {
      console.log("Will the service worker register?");
      navigator.serviceWorker.register('service-worker.js')
@@ -465,36 +547,14 @@
 
 
 
-<!-- Messenger Chat Plugin Code -->
-<div id="fb-root"></div>
 
-<!-- Your Chat Plugin code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
 
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "108587745020616");
-  chatbox.setAttribute("attribution", "biz_inbox");
-</script>
 
-<!-- Your SDK code -->
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v13.0'
-    });
-  };
 
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
+
+
+
+
 
 </body>
 </html>
