@@ -118,34 +118,35 @@ html{
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
+    margin: auto;
     position: relative;
     display: inline-block;
+    margin-bottom: 20px;
   }
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: none;
     position: absolute;
-    background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    min-width: 260px;
-   
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;   
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    background: rgb(0, 60, 129);
+    min-width: 250px;
+    overflow: auto; 
+    z-index: 1; 
 
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
     color: white;
-    padding: 7px 16px;
-    display: block;
-    left: 20px;
-    text-align: left;
-    font-size: 16px;
-    transition: 0.5s;
-    text-decoration: none;
+        padding: 7px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
    
     }
 
@@ -153,14 +154,12 @@ html{
 
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
-    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 7px 16px;
     text-decoration: underline;
-    padding: 5px 16px;
+    background: rgba(0,118,255,0.9);
     display: block;
-    left: 20px;
-    text-align: left;
-    color: #dc143c; 
-    transition: 0.5s;
+    font-size: 16px;
     }
   
   /* Show the dropdown menu on hover */
@@ -168,14 +167,13 @@ html{
       display: block;
       left: -15px;
       padding-bottom: 20px;
+      text-align: center;
       
     }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn{
-    background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: rgb(0, 60, 129);
   }
 
 
@@ -356,7 +354,7 @@ html{
     #toggle{
         position: fixed;
         top: 37px;
-        right: 7%;
+        right: 6.5%;
         width: 30px;
         height: 30px;
         border-radius: 5px;
@@ -488,7 +486,7 @@ html{
     #menulist2 ul li a:hover{
         color: #cf2345;
         text-decoration: none;
-        font-size: 7px;
+        font-size: 14px;
         float: left;
         letter-spacing: 0px;
         text-decoration: underline;
@@ -2081,6 +2079,250 @@ footer { position: static; }
 /* MEDIA QUERY FOR HEADER IPADS. TABLETS*/
 @media only screen and (min-width: 481px) and (max-width: 768px){
     
+    #menuList1{
+        display: none;
+    }
+    #menulist2{
+        display: block;
+    }
+
+    #menuList{
+        display: block;
+    } 
+
+    .dropdown2{
+        display: block;
+    }
+
+    #toggle{
+        display: block;
+    }
+
+    #toggle{
+        position: fixed;
+        top: 47px;
+        right: 7%;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background:rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+    }
+    
+
+    .toggle{
+        position: fixed;
+        top: 56px;
+        right: 6%;
+        width: 32px;
+        height: 30px;
+        border-radius: 5px;
+        background:rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+
+
+
+    #toggle:before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #00c911;
+        transform: translateY(-5px);
+        transition: 0.2s;
+        
+    }
+    
+        
+    #toggle{
+        top: 75px;
+        content: '';
+        position: fixed;
+        width: 20px;
+        height: 2px;
+        background:rgba(0, 224, 56, 0.795);
+        transform: translateY(-5px);
+        transition: 0.2s;
+        
+    }
+   
+
+   
+
+
+
+    #toggle:after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #00bd10;
+        transform: translateY(5px);
+        transition: 0.2s;
+        
+    }
+    
+
+    #toggle.active::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+    
+    #toggle.active::after{
+        transform: translateY(0px) rotate(-45deg);
+    }
+    
+    #menulist2{
+        position: fixed;
+        top: 40px;
+        right: -50%;
+        width: 30%;
+        height: 25%;
+        background: #005C97;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: 0.5s;
+        z-index: 1;
+        padding-bottom: 130px;
+    }
+    
+    #menulist2.active{
+        right:0px;
+    }
+    
+    
+    
+    
+    #menulist2 ul{
+        position: relative;
+        margin-top: 50px;
+    
+    }
+    
+    #menulist2 ul li{
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    
+    #menulist2 ul li:hover{
+        background: none;
+    }
+    
+    #menulist2 ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        float: left;
+        letter-spacing: 0px;
+        text-decoration: none;
+        transition: 0.5s;
+        line-height: 9px;
+    }
+    
+    #menulist2 ul li a:hover{
+        color: #cf2345;
+        text-decoration: none;
+        font-size: 14px;
+        float: left;
+        letter-spacing: 0px;
+        text-decoration: underline;
+        transition: 0.5s;
+        line-height: 9px;
+    }
+
+    
+
+
+
+    .dropbtn2{    
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+    }
+    .dropbtn2:hover{
+        background: rgba(0,118,255,0.9);
+        box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+    }
+    
+
+
+    
+
+      
+      .dropdown2 {
+        margin: auto;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      
+      .dropdown2-content {
+        display: none;
+        position: absolute;
+        margin: 0%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        font-size: 16px;
+        background: rgb(0, 60, 129);
+        min-width: 200px;
+        overflow: auto; 
+        z-index: 1;
+      }
+      
+      .dropdown2-content a {
+        color: white;
+        padding: 7px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+      }
+      
+
+      .dropdown2-content a:hover {
+        color: rgb(255, 255, 255);
+        padding: 7px 16px;
+        text-decoration: underline;
+        display: block;
+        font-size: 16px;
+      }
+
+      .dropdown2 a:hover{
+          background: rgba(0,118,255,0.9);
+      }
+      .show {display: block;}
+     
+
+
+
+
+
+
+
+
+
 
     .header{
     
@@ -2104,40 +2346,7 @@ footer { position: static; }
     }
 
 
-    nav ul{
-        width: 50%;
-        background: #005C97;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav  ul li{
-        display: block;
-        margin-top: 13px;
-        margin-bottom: 13px;
-       
-
-    }
-
-    nav ul li a{
-        color: white;
-        text-decoration: none;
-       font-size: 18px;
-       line-height: 24px;
-    }
-
-
-    nav ul li a:hover{
-    color: #dc143c;
-    font-size: 17px;
-    text-decoration: underline;
    
-    }   
 
     
     .menu-icon{
@@ -2148,15 +2357,7 @@ footer { position: static; }
               
     }
 
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-        width: 35%;
-        height: 120%;
-        margin-right: 7%;
-        margin-top: 10px;
-        
-    }
+
 
     .myphulogo{
     width: 80px;
