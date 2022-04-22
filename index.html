@@ -26,6 +26,13 @@
 </head>
 <body>
 <!--START OF CODE FOR MENU AND HEADER IMAGE &TEXT-->
+
+
+<div class="load" id="loading">
+  <hr/><hr/><hr/><hr/>
+</div>
+
+
 <section class="header" id="home-home">
 
     <div class="container">
@@ -146,7 +153,7 @@
 <div class="ourservicesBG">
   
   <section class="ourservices" id="ourservices">
-    <h1>Our services</h1>
+    <h1>our services</h1>
   
     <div class="dropdown2">
       <button onclick="myFunction()" class="dropbtn2">View List <i class="fa-solid fa-circle-chevron-down"></i></button>
@@ -550,7 +557,12 @@
 
 
 
-
+<script>
+  window.addEventListener("load", function(){
+    var loading = document.getElementById("loading");
+    document.body.removeChild(loading);
+  });
+</script>
 
 
 
