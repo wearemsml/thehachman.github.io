@@ -10,6 +10,50 @@ html{
 }
 
 
+
+
+#cookiePopup {
+    background: white;
+    width: 25%;
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    box-shadow: 0px 0px 15px #000329;
+    padding: 5px 10px;
+    z-index: 11;
+    padding: 20px 20px 20px 20px;
+   
+  }
+  
+    #cookiePopup p a{
+    text-align: left;
+    font-size: 15px;
+    color: #0044ff;
+  }
+  #cookiePopup button{
+    width: 100%;
+    border: navajowhite;
+    background: #097fb7;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .load{position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);
     /*change these sizes to fit into your project*/
     width:100px;
@@ -146,7 +190,7 @@ html{
         padding: 7px 16px;
         text-decoration: none;
         display: block;
-        font-size: 16px;
+        font-size: 14px;
    
     }
 
@@ -566,7 +610,45 @@ html{
           background: rgba(0,118,255,0.9);
       }
       .show {display: block;}
-     
+ 
+      
+
+      #cookiePopup {
+        background: white;
+        width: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        box-shadow: 0px 0px 15px #000329;
+        padding: 5px 10px;
+        z-index: 11;
+        font-size: 12px;
+        padding: 20px 20px 20px 20px;
+       
+      }
+      
+        #cookiePopup p a{
+        text-align: left;
+        font-size: 12px;
+        color: #0044ff;
+      }
+      #cookiePopup button{
+        width: 100%;
+        border: navajowhite;
+        background: #097fb7;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    
+
+
+
+
+
 
 
 }
@@ -681,7 +763,7 @@ html{
         flex-basis: 22%;
         color: white;
         border-radius: 10px;
-        margin-bottom: 30px;
+        margin-bottom:60px;
         padding-bottom: 0px;
         position: relative;
         box-sizing: border-box;
@@ -803,14 +885,14 @@ html{
 
     .textonwhatsappbtn{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 30px;
+        font-size: 32px;
         background: #228B22;
         cursor: pointer;
         transition: 0.5s;
@@ -820,13 +902,13 @@ html{
 
     .textonwhatsappbtn:hover{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         padding: 12px 34px;
-        font-size: 32px;
+        font-size: 30px;
         border-radius: 5px;
         background: #228B22;
         cursor: pointer;
@@ -1640,14 +1722,14 @@ html{
 
     .textonwhatsappbtn{
         margin: auto;
-        margin-top: 20px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         border-radius: 5px;
         padding: 12px 20px;
-        font-size: 17px;
+        font-size: 19px;
         background: #228B22;
         cursor: pointer;
         transition: 0.5s;
@@ -1657,14 +1739,14 @@ html{
 
     .textonwhatsappbtn:hover{
         margin: auto;
-        margin-top: 20px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         border-radius: 5px;
         padding: 12px 20px;
-        font-size: 19px;
+        font-size: 17px;
         background: #228B22;
         cursor: pointer;
         transition: 0.5s;
@@ -2318,6 +2400,53 @@ footer { position: static; }
 
 
 
+      #cookiePopup {
+        background: white;
+        width: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        box-shadow: 0px 0px 15px #000329;
+        padding: 5px 10px;
+        z-index: 11;
+        font-size: 15px;
+        padding: 20px 20px 20px 20px;
+       
+      }
+      
+        #cookiePopup p a{
+        text-align: left;
+        font-size: 15px;
+        color: #0044ff;
+      }
+      #cookiePopup button{
+        width: 100%;
+        border: navajowhite;
+        background: #097fb7;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2653,14 +2782,14 @@ footer { position: static; }
 
     .textonwhatsappbtn{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 25px;
+        font-size: 27px;
         background: #228B22;
         cursor: pointer;
         transition: 0.5s;
@@ -2670,13 +2799,13 @@ footer { position: static; }
 
     .textonwhatsappbtn:hover{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         padding: 12px 34px;
-        font-size: 27px;
+        font-size: 25px;
         border-radius: 5px;
         background: #228B22;
         cursor: pointer;
@@ -3128,7 +3257,7 @@ footer { position: static; }
     }
 
     .myphulogo{
-        width: 100px;
+        width: 70px;
         cursor: pointer;
     
     }
@@ -3172,6 +3301,16 @@ footer { position: static; }
         transition: 0.5s;
     }
 
+
+
+
+
+
+
+
+
+
+    
     .header{
     
         width: 100%;
@@ -3230,6 +3369,51 @@ footer { position: static; }
     border-radius: 3px;
 
     }
+
+
+
+    
+    #cookiePopup {
+        background: white;
+        width: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        box-shadow: 0px 0px 15px #000329;
+        padding: 5px 10px;
+        z-index: 11;
+        font-size: 16px;
+        padding: 20px 20px 20px 20px;
+       
+      }
+      
+        #cookiePopup p a{
+        text-align: left;
+        font-size: 16px;
+        color: #0044ff;
+      }
+      #cookiePopup button{
+        width: 100%;
+        border: navajowhite;
+        background: #097fb7;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -3469,14 +3653,14 @@ footer { position: static; }
     
     .textonwhatsappbtn{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 30px;
+        font-size: 32px;
         background: #228B22;
         cursor: pointer;
         transition: 0.5s;
@@ -3486,13 +3670,13 @@ footer { position: static; }
 
     .textonwhatsappbtn:hover{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         padding: 12px 34px;
-        font-size: 32px;
+        font-size: 30px;
         border-radius: 5px;
         background: #228B22;
         cursor: pointer;
@@ -3997,6 +4181,16 @@ footer{
         background-color: #dc143c; /* Add a dark-grey background on hover */
     }
 
+
+
+
+
+
+
+
+
+
+    
 }
 
 
