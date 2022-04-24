@@ -179,7 +179,10 @@ html{
     font-size: 16px;
     background: rgb(0, 60, 129);
     min-width: 250px;
-    overflow: auto; 
+    height: 500%;
+    overflow: scroll;
+    overflow-y: scroll; 
+    overflow-y: hidden;
     z-index: 1; 
 
   }
@@ -191,6 +194,7 @@ html{
         text-decoration: none;
         display: block;
         font-size: 14px;
+        max-width: 250px;
    
     }
 
@@ -204,6 +208,7 @@ html{
     background: rgba(0,118,255,0.9);
     display: block;
     font-size: 16px;
+    max-width: 250px;
     }
   
   /* Show the dropdown menu on hover */
@@ -212,6 +217,10 @@ html{
       left: -15px;
       padding-bottom: 20px;
       text-align: center;
+      overflow: scroll;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      max-width: 250px;
       
     }
   
@@ -955,6 +964,20 @@ html{
         line-height: 50px;
     }
 
+    .hotlines h4 a{
+        color:  rgb(104, 165, 255);
+        font-size: 30px;
+        line-height: 50px;
+        text-decoration: underline;
+    }
+
+    .hotlines h4 a:hover{
+        color: rgb(59, 137, 255);
+        font-size: 30px;
+        line-height: 50px;
+        text-decoration: underline;
+    }
+
     .hotlinesBG{
         width: 100%;
         transition: .1s;
@@ -1219,13 +1242,34 @@ html{
         color:  inherit;
     }
 
-    .footer-distributed .footer-company-name{
+    .bottomfooter{
         color:  #8f9296;
         font-size: 14px;
         font-weight: normal;
         margin: 0;
         text-align: center;
     }
+    
+    .bottomfooter a{
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        text-align: center;
+    }
+    
+
+    .bottomfooter a:hover{
+        color:  #0059ff;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        text-align: center;
+    }
+
+ 
+
+
 
     /* Footer Center */
 
@@ -1268,9 +1312,9 @@ html{
         line-height: 2px;
     }
 
-    .footer-distributed .footer-center p a{
-        color:  #B72659;
-        text-decoration: none;
+    .footer-distributed .footer-center p a:hover{
+        color:  #0059ff;
+        text-decoration: underline;
     }
 
 
@@ -2268,7 +2312,7 @@ footer { position: static; }
         top: 40px;
         right: -50%;
         width: 30%;
-        height: 25%;
+        height: 55%;
         background: #005C97;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
