@@ -587,7 +587,7 @@ html{
         display: none;
         position: absolute;
         margin: 0%;
-        left: -15px;
+        left: 0px;
         padding-top: 10px;
         padding-bottom: 20px;
         text-decoration: none;
@@ -656,102 +656,11 @@ html{
     
 
 
-}
 
 
 
 
-.about{
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
-    margin-top: 40px;
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 65px;
-    color: white;
-    transition: 0.5s;
-    color: white;
-}
 
-
-
-.aboutBG{
-    width: 100%;
-    padding-bottom: 120px;
-    background-size: cover;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    font-size: 65px;
-    background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transition: 0.5s;
-
-}
-
-
-
-
-.about-col h1{
-    color: black;
-  font-size: 50px;
-  padding-top: 50px;
-  padding-bottom: 0px;
-}
-
-
-
-.about h4{
-    font-size: 30px;
-
-    font-weight: 600;
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    color: black;
-    transition: 0.5s;
-
-}
-
- .about h1{
-    padding-bottom: 30px;
-
-}
-
-.about p{
-    color: black;
-    text-align: left;
-    font-size: 25px;
-    line-height: 35px;
-    padding: 30px;
-
-}
-
-.aboutrow{
-    margin-top: 1px;
-    display: flex;
-    justify-content: center;
-    flex-direction : column; 
-    flex-flow : wrap;
-
-}
-
-
-
-
-    .about{
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
-    margin-top: 40px;
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 65px;
-    color: white;
-    transition: 0.5s;
-    color: white;
 }
 
 
@@ -759,165 +668,414 @@ html{
 
 
 
-.aboutfounderrow{
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    flex-direction : row; 
-    flex-flow : wrap;
-    margin-bottom: 8%;
+    .howtouse{
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        font-size: 65px;
+        color: white;
+        transition: 0.5s;
 
-}
-
-
-
-.aboutfounder-col{
-    width: 80%;
-    color: black;
-    margin: 0px;
-    flex-basis: 25%;
-    background: transparent;
-    border-radius: 10px;
-    margin-bottom: 0%;
-    margin-top: 0px;
-    padding:20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-   .aboutfounderrow img{
-    width: 100%;
-    border-radius: 10px;
-    top: 0;
-   left: 0;
-
-}
+    }
 
 
 
-   .aboutfounder h1{
-    color: white;
-    text-align: center;
-    font-size: 80px;
-    line-height: 35px;
-    padding-bottom: 70px;
-    margin-top: 8%;
-    
+    .howtouseBG{
+        width: 100%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 50px;
+        font-size: 65px;
+        background: #005C97;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: 0.5s;
 
-}
-
-
-
-  .aboutfounder-col h5{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    line-height: 35px;
-    padding-bottom: 0px;
-    
-
-}
-
-  .aboutfounder-col p{
-    color: white;
-    text-align: center;
-    font-size: 25px;
-    line-height: 5px;
-    padding-bottom: 50px;
-    
-
-}
+    }
 
 
-.about-whatwedo-col{
- color: black;
-    margin: 10px;
-    flex-basis: 70%;
+    .howtouseicons{
+        height: 100px;
+        width: 100px;
+    }
 
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 8%;
-    margin-top: 0px;
-    padding:20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
 
+    .howtouse h4{
+        font-size: 30px;
+
+        font-weight: 600;
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+        color: black;
+        transition: 0.5s;
+
+    }
+
+
+
+    .howtouse p{
+        color: black;
+        font-size: 25px;
+        line-height: 35px;
+        padding: 10px;
+
+    }
+    .howtouserow{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction : row; 
+        flex-flow : wrap;
  
-  .about-whatwedo-col h1{
-  color: black;
-  font-size: 50px;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
+    }
+
+
+    .howtouse-col{
+        margin: 10px;
+        flex-basis: 30%;
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        margin-top: 50px;
+        padding:20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+
+    .howtouse-col:hover{
+        box-shadow: 0 0 20px 0px #20B2AA ;
+        transition: 0.5s;
+    }
+    .howtouse:hover{
+        box-shadow: 0 0 20px 0px #20B2AA ;
+        transition: 0.5s;
+        font-size: 60px; 
+        transition: 0.5s;
+
+    }
 
 
 
- .about-whatwedo-col h4{
-    font-size: 30px;
 
-    font-weight: 600;
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    color: black;
-    transition: 0.5s;
+   
 
-}
-
-
-
- .about-whatwedo-col p{
-    color: black;
-    font-size: 25px;
-    line-height: 35px;
-    padding-bottom: 50px;
+    .ourservices-col{
+        flex-basis: 22%;
+        color: white;
+        border-radius: 10px;
+        margin-bottom:60px;
+        padding-bottom: 0px;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        background:rgba(0,0,0,0.4);
+        transition: 0.5s;
     
+    }
 
-}
+    .ourservices-col:hover{
+   
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+        transition: 0.5s;
+    }
 
+    .ourservices-col img{
+        width: 100%;
+        border-radius: 10px;
+        top: 0;
+       left: 0;
 
-.about-col{
-    margin: 10px;
-    flex-basis: 70%;
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding-top: 20px;
-    margin-top: 0px;
-    padding:20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-
-.about-col:hover{
-    box-shadow: 0 0 20px 0px #20B2AA ;
-    transition: 0.5s;
-
-}
-.about:hover{
-    box-shadow: 0 0 20px 0px #20B2AA ;
-    transition: 0.5s;
-    font-size: 60px; 
-    transition: 0.5s;
-
-}
+    }
 
 
+    .ourservices-col h5{
+        font-size: 27px;
+        font-style: bold;
+        font-weight: 800;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .ourservices h4{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 50px;
+        color: white;
+        line-height: 60px;
+
+    }
+
+    .ourservices{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 90px;
+        font-size: 65px;
+        color: white;
+    }
+
+    .ourservices h1{
+        font-size: 100px;
+        padding-bottom: 50px;
+    }
+
+    .ourservices-col p{
+        color: white;
+        font-size: 18px;
+    }
+
+
+    .ourservicesrow{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction : row; 
+        flex-flow : wrap;
+ 
+    }
+
+
+    .ourservicesBG{
+        width: 100%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 100px;
+        font-size: 60px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .selectbtn{
+        margin: auto;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #1167b1;
+        border-radius: 5px;
+        padding: 12px 34px;
+        font-size: 20px;
+        background: #1167b1;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+
+    .selectbtn:hover{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #dc143c;
+        padding: 12px 34px;
+        font-size: 20px;
+        border-radius: 5px;
+        background: #dc143c;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+
+    .textonwhatsappbtn{
+        margin: auto;
+        margin-top: 0px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        padding: 12px 34px;
+        font-size: 32px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+
+    .textonwhatsappbtn:hover{
+        margin: auto;
+        margin-top: 0px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        padding: 12px 34px;
+        font-size: 30px;
+        border-radius: 5px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+    }
 
 
 
 
 
 
+    
+    .hotlines{
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        text-align: center;
+        padding-top: 30px;
+        font-size: 65px;
+        color: white;
+
+    }
+
+
+    .hotlines-col{
+        flex-basis: 100%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        color: white;
+    
+    }
+    .hotlines h2{
+        font-size: 40px;
+        line-height: 70px;
+
+    }
+
+    .hotlines h4{
+        color: white;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .hotlines h4 a{
+        color:  rgb(104, 165, 255);
+        font-size: 30px;
+        line-height: 50px;
+        text-decoration: underline;
+    }
+
+    .hotlines h4 a:hover{
+        color: rgb(59, 137, 255);
+        font-size: 30px;
+        line-height: 50px;
+        text-decoration: underline;
+    }
+
+    .hotlinesBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 0px;
+        color: white;
+        background-image: linear-gradient(to right top, #070063, #002070, #003374, #004372, #00516d, #00576a, #005c64, #00605b, #006054, #00604c, #005f43, #005e38);
+    }
 
 
 
 
 
+    
+    .testimonials{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 80px;
+        color: white;
+
+    }
+
+    .testimonialsrow{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction : row; 
+        flex-flow : wrap;
+ 
+    }
 
 
+
+    .testimonials-col{
+        flex-basis: 22%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .testimonials-col p{
+        font-style: italic;
+        font-size: 20px;
+        color: white;
+    }
+
+    .testimonials h1{
+        font-size: 100px;
+        padding-bottom: 10px;
+    }
+
+    .testimonials h5{
+        line-height: 80px;
+        font-size: 33px;
+    }
+
+
+    .testimonialsBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 100px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
+
+
+    .testimonials h2{
+        line-height: 50px;
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+
+    .testimonialsBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 100px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    }
 
 
     .becomeapartner{
@@ -1372,263 +1530,407 @@ html{
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
 
-  
+    .howtouse{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+        color: white;
+        transition: 0s;
 
-    /* ABOUT*/
+    }
 
-.about{
-    width: 80%;
-    margin: auto;
-    padding-top: 0px;
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 6px;
-    color: white;
-    transition: 0.5s;
-    color: white;
+    .howtouse h1{
+        padding-top: 0px;
+        font-size: 40Px;
+    }
+
+    .howtouseBG{
+        width: 100%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+        font-size: 2px;
+        background: #005C97;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+     .howtouseicons{
+        display: block;
+        margin: auto;
+        height: 30px;
+        width: 30px;
+
+        }
+
+    
+
+    .howtouse h4{
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        margin: 10px 0;
+        color: black;
+        
+
+    }
+
+
+    .howtouse p{
+        color: black;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px;
+
+    }
+
+    .howtouserow{
+        padding-top: 20px;
+       flex-direction: column;
+ 
+    }
+
+
+    .howtouse-col{
+        margin: auto;
+        flex-basis: 2%;
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        margin-top: 0px;
+        padding:20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+       .howtouse-col:hover{
+        box-shadow: none;
+        
+    }
+    .howtouse:hover{
+        box-shadow: none; ;
+       
+
+    }
+
+
 }
 
 
 
-.aboutBG{
-    width: 100%;
-    padding-bottom: 0px;
-    background-size: cover;
-    margin: auto;
-    text-align: center;
-    padding-top: 1px;
-    font-size: 5px;
-    background: #005C97;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transition: 0.5s;
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+    .ourservices-col{
+        flex-basis: 100%;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+        background:rgba(0,0,0,0.3);
+        box-sizing: border-box;
+        transition: 0s;
+
+    
+    }
+
+    .ourservices-col:hover{
+   
+        box-shadow: none;
+        transition: 0s;
+    }
+
+    .ourservices-col img{
+     width: 50%;
+        border-radius: 10px;
+        top: 0;
+       left: 0;
+
+    }
+
+
+    .ourservices{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 22px;
+        color: white;
+    }
+
+
+
+    .ourservices-col p{
+        color: white;
+        padding-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .ourservices-col h5{
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-style: bold;
+        font-weight: 800;
+        text-align: center;
+        margin: 0px 0;
+    }
+
+
+    .ourservices h1{
+        font-size: 40px;
+        padding-bottom: 10px;
+    }
+
+    .ourservices h4{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+        color: white;
+        line-height: 30px;
+
+    }
+
+
+    .ourservicesrow{
+        padding-top: 0px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction : column; 
+        flex-flow : wrap;
+     
+ 
+        }
+
+    .ourservicesBG{
+        width: 100%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        font-size: 60px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .selectbtn{
+        display: inline-block;
+        text-decoration: underline;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0;
+        font-size: 12px;
+        background: none;
+        cursor: pointer;
+        transition: 0.5s;
+        padding-bottom: 10px;
+    }
+
+
+    .selectbtn:hover{
+        display: inline-block;
+        text-decoration: underline;
+        color: #dc143c;
+        border: none;
+        padding: 0;
+        font-size: 12px;
+        border-radius: 5px;
+        background: none;
+        cursor: pointer;
+        transition: 0.5s;
+        padding-bottom: 10px;
+    }
+
+
+
+    .textonwhatsappbtn{
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        padding: 12px 20px;
+        font-size: 18px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+
+    .textonwhatsappbtn:hover{
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        padding: 12px 20px;
+        font-size: 17px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+    
+}
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .hotlines{
+        width: 80%;
+        margin-bottom: 10px;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+        color: white;
+
+    }
+
+
+    .hotlines-col{
+        flex-basis: 100%;
+        border-radius: 10px;
+        margin-bottom: 23px;
+        padding-bottom: 0px;
+        position: relative;
+        overflow: hidden;
+        color: white;
+    
+    }
+
+    .hotlines h1{
+        padding-top: 20px; 
+        font-size: 45px;
+        line-height: 30px;
+
+    }
+
+
+    .hotlines h2{
+        padding-top: 20px;
+        font-size: 21px;
+        line-height: 30px;
+
+    }
+
+    .hotlines h4{
+        color: white;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .hotlinesBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        color: white;
+        background-image: linear-gradient(to right top, #070063, #002070, #003374, #004372, #00516d, #00576a, #005c64, #00605b, #006054, #00604c, #005f43, #005e38);
+    }
+
 
 }
 
 
 
 
-.about-col h1{
-    color: black;
-  font-size: 50px;
-  padding-top: 10px;
-  padding-bottom: 0px;
-}
 
 
+@media only screen and (min-width: 320px) and (max-width: 480px)   {
 
-.about h4{
-    font-size: 30px;
-    font-weight: 600;
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    color: black;
-    transition: 0.5s;
+    .testimonials{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 0px;
+        text-align: center;
+        padding-top: 0px;
+        color: white;
 
-}
-
- .about h1{
-    padding-bottom: 30px;
-    font-size: 55px;
-
-}
-
-.about p{
-    color: black;
-    text-align: left;
-    font-size: 17px;
-    line-height: 35px;
-    padding: 0px;
+    }
 
 
-}
-
-.aboutrow{
+    .testimonialsrow{
     margin-top: 1px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction : column; 
     flex-flow : wrap;
-    margin-bottom: 50px;
-
 }
-
-
-
-
-    .about{
-    width: 80%;
-    margin: auto;
-    margin-top: 20px;
-    text-align: center;
-    padding-bottom: 50px;
-    font-size: 65px;
-    color: white;
-    transition: 0.5s;
-    color: white;
-}
-
-
-
-
-
-
-.aboutfounderrow{
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    flex-direction : column; 
-    flex-flow : wrap;
-    margin-bottom: 8%;
-
-}
-
-
-
-.aboutfounder-col{
-    width: 80%;
-    color: black;
-    margin: 0px;
-    flex-basis: 80%;
-    background: transparent;
-    border-radius: 10px;
-    padding-bottom: 0%;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-   .aboutfounderrow img{
-    width: 100%;
-    border-radius: 10px;
-    top: 0;
-   left: 0;
-
-}
-
-
-
-   .aboutfounder h1{
-    color: white;
-    text-align: center;
-    font-size: 35px;
-    line-height: 35px;
-    padding-bottom: 20px;
-    margin-top: 8%;
-    
-
-}
-
-
-
-  .aboutfounder-col h5{
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    line-height: 55px;
-    padding-bottom: 0px;
-    
-
-}
-
-  .aboutfounder-col p{
-    color: white;
-    text-align: center;
-    font-size: 18px;
-    line-height: 5px;
-    padding-bottom: 50px;
-    
-
-}
-
-
-.about-whatwedo-col{
- color: black;
-    margin: 10px;
-    flex-basis: 100%;
-
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 8%;
-    margin-top: 0px;
-    padding:20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
  
-  .about-whatwedo-col h1{
-  color: black;
-  font-size: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+    .testimonials-col{
+        margin: auto;
+        flex-basis: 100%;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .testimonials-col p{
+        font-style: italic;
+        font-size: 17px;
+        color: white;
+    }
+
+    .testimonials h1{
+        font-size: 30px;
+        padding-bottom: 7px;
+    }
+
+    .testimonials h5{
+        line-height: 70px;
+        font-size: 21px;
+    }
+
+    .testimonials h2{
+        line-height: 25px;
+        font-size: 19px;
+    }
+
+    .testimonialsBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+     
 }
-
-
-
- .about-whatwedo-col h4{
-    font-size: 25px;
-
-    font-weight: 600;
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    color: black;
-    transition: 0.5s;
-
-}
-
-
-
- .about-whatwedo-col p{
-    color: black;
-    font-size: 17px;
-    line-height: 35px;
-    padding-bottom: 50px;
-    
-
-}
-
-
-.about-col{
-    margin: 10px;
-    flex-basis: 100%;
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 17px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-
-
-.about-col:hover{
-    box-shadow: 0 0 20px 0px #20B2AA ;
-    transition: 0.5s;
-
-}
-.about:hover{
-    box-shadow: 0 0 20px 0px #20B2AA ;
-    transition: 0.5s;
-    font-size: 60px; 
-    transition: 0.5s;
-
-}
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
 
 
 
@@ -2275,252 +2577,416 @@ footer { position: static; }
 
 
 
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .howtouse{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+        color: white;
+        transition: 0s;
+
+    }
+
+    .howtouse h1{
+        padding-top: 0px;
+        font-size: 40Px;
+    }
+
+    .howtouseBG{
+        width: 100%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+        font-size: 2px;
+        background: #005C97;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+     .howtouseicons{
+        display: block;
+        margin: auto;
+        height: 70px;
+        width: 70px;
+
+        }
+
+    
+
+    .howtouse h4{
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+        margin: 10px 0;
+        color: black;
+        
+
+    }
+
+
+    .howtouse p{
+        color: black;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px;
+
+    }
+
+    .howtouserow{
+        padding-top: 20px;
+       flex-direction: column;
+ 
+    }
+
+
+    .howtouse-col{
+        margin: auto;
+        flex-basis: 2%;
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        margin-top: 0px;
+        padding:20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+       .howtouse-col:hover{
+        box-shadow: none;
+        
+    }
+    .howtouse:hover{
+        box-shadow: none; ;
+       
+
+    }
+
+
+}
+
+
+
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
-    .about{
-            width: 80%;
-            margin: auto;
-            padding-top: 0px;
-            text-align: center;
-            padding-bottom: 50px;
-            font-size: 6px;
-            color: white;
-            transition: 0.5s;
-            color: white;
-        }
-    
-    
-    
-        .aboutBG{
-            width: 100%;
-            padding-bottom: 0px;
-            background-size: cover;
-            margin: auto;
-            text-align: center;
-            padding-top: 1px;
-            font-size: 5px;
-            background: #005C97;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            transition: 0.5s;
-    
-        }
-    
-    
-    
-    
-        .about-col h1{
-            color: black;
-          font-size: 50px;
-          padding-top: 50px;
-          padding-bottom: 0px;
-        }
-    
-    
-    
-        .about h4{
-            font-size: 30px;
-            font-weight: 600;
-            text-align: center;
-            font-weight: 600;
-            margin: 10px 0;
-            color: black;
-            transition: 0.5s;
-    
-        }
-    
-         .about h1{
-            padding-bottom: 30px;
-            font-size: 60px;
-    
-        }
-    
-        .about p{
-            color: black;
-            text-align: left;
-            font-size: 22px;
-            line-height: 35px;
-            padding: 5px;
-    
-    
-        }
-    
-        .aboutrow{
-            margin-top: 1px;
-            display: flex;
-            justify-content: center;
-            flex-direction : column; 
-            flex-flow : wrap;
-            margin-bottom: 90px;
-     
-        }
-    
-    
-        
-    
-            .about{
-            width: 80%;
-            margin: auto;
-            margin-top: 40px;
-            text-align: center;
-            padding-bottom: 50px;
-            font-size: 65px;
-            color: white;
-            transition: 0.5s;
-            color: white;
-        }
-    
-    
-    
-    
-    
-    
-        .aboutfounderrow{
-            margin-top: 5px;
-            display: flex;
-            justify-content: center;
-            flex-direction : column; 
-            flex-flow : wrap;
-            margin-bottom: 8%;
-     
-        }
-    
-    
-    
-        .aboutfounder-col{
-            width: 80%;
-            color: black;
-            margin: 0px;
-            flex-basis: 80%;
-            background: transparent;
-            border-radius: 10px;
-            padding-bottom: 0%;
-            box-sizing: border-box;
-            transition: 0.5s;
-        }
-    
-           .aboutfounderrow img{
-            width: 100%;
-            border-radius: 10px;
-            top: 0;
-           left: 0;
-    
-        }
-    
-    
-    
-           .aboutfounder h1{
-            color: white;
-            text-align: center;
-            font-size: 49px;
-            line-height: 35px;
-            padding-bottom: 20px;
-            margin-top: 0%;
-            
-    
-        }
-    
-    
-    
-          .aboutfounder-col h5{
-            color: white;
-            text-align: center;
-            font-size: 26px;
-            line-height: 55px;
-            padding-bottom: 0px;
-            
-    
-        }
-    
-          .aboutfounder-col p{
-            color: white;
-            text-align: center;
-            font-size: 23px;
-            line-height: 5px;
-            padding-bottom: 50px;
-            
-    
-        }
-    
-    
-        .about-whatwedo-col{
-         color: black;
-            margin: 10px;
-            flex-basis: 100%;
-    
-            background: white;
-            border-radius: 10px;
-            margin-bottom: 8%;
-            margin-top: 0px;
-            padding:20px 12px;
-            box-sizing: border-box;
-            transition: 0.5s;
-        }
-    
-         
-          .about-whatwedo-col h1{
-          color: black;
-          font-size: 50px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-        }
-    
-    
-    
-         .about-whatwedo-col h4{
-            font-size: 30px;
-    
-            font-weight: 600;
-            text-align: center;
-            font-weight: 600;
-            margin: 10px 0;
-            color: black;
-            transition: 0.5s;
-    
-        }
-    
-    
-    
-         .about-whatwedo-col p{
-            color: black;
-            font-size: 22px;
-            line-height: 35px;
-            padding-bottom: 50px;
-            
-    
-        }
-    
-    
-        .about-col{
-            margin: 10px;
-            flex-basis: 100%;
-            background: white;
-            border-radius: 10px;
-            margin-bottom: 5%;
-            padding: 17px;
-            box-sizing: border-box;
-            transition: 0.5s;
-        }
-    
-    
-        .about-col:hover{
-            box-shadow: 0 0 20px 0px #20B2AA ;
-            transition: 0.5s;
-    
-        }
-        .about:hover{
-            box-shadow: 0 0 20px 0px #20B2AA ;
-            transition: 0.5s;
-            font-size: 60px; 
-            transition: 0.5s;
-    
-        }
-    }
-    
-    
-    
+    .ourservices-col{
+        flex-basis: 100%;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+        background:rgba(0,0,0,0.3);
 
+        box-sizing: border-box;
+        transition: 0s;
+    
+    }
+
+    .ourservices-col:hover{
+   
+        box-shadow: none;
+        transition: 0s;
+    }
+
+    .ourservices-col img{
+        display: block;
+        width: 50%;
+        margin: auto;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+    }
+
+
+    .ourservices{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 22px;
+        color: white;
+    }
+
+
+
+    .ourservices-col p{
+        color: white;
+        padding-bottom: 5px;
+        font-size: 24px;
+    }
+
+    .ourservices-col h5{
+        font-size: 35px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-style: bold;
+        font-weight: 800;
+        text-align: center;
+        margin: 0px 0;
+    }
+
+
+    .ourservices h1{
+        font-size: 60px;
+        padding-bottom: 10px;
+    }
+
+    .ourservices h4{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 30px;
+        color: white;
+        line-height: 40px;
+
+    }
+
+
+    .ourservicesrow{
+        padding-top: 0px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction : column; 
+        flex-flow : wrap;
+     
+ 
+        }
+
+    .ourservicesBG{
+        width: 100%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        font-size: 60px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .selectbtn{
+        display: inline-block;
+        text-decoration: underline;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0;
+        font-size: 20px;
+        background: none;
+        cursor: pointer;
+        transition: 0.5s;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+
+    .selectbtn:hover{
+        display: inline-block;
+        text-decoration: underline;
+        color: #dc143c;
+        border: none;
+        padding: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        background: none;
+        cursor: pointer;
+        transition: 0.5s;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+
+
+    .textonwhatsappbtn{
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        padding: 12px 34px;
+        font-size: 27px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+
+    .textonwhatsappbtn:hover{
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        padding: 12px 34px;
+        font-size: 25px;
+        border-radius: 5px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+    .hotlines{
+        width: 80%;
+        margin-bottom: 10px;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+        color: white;
+
+    }
+
+
+    .hotlines-col{
+        flex-basis: 100%;
+        border-radius: 10px;
+        margin-bottom: 23px;
+        padding-bottom: 0px;
+        position: relative;
+        overflow: hidden;
+        color: white;
+    
+    }
+
+    .hotlines h1{
+        padding-top: 20px; 
+        font-size: 70px;
+        line-height: 30px;
+
+    }
+
+
+    .hotlines h2{
+        padding-top: 20px;
+        font-size: 32px;
+        line-height: 39px;
+
+    }
+
+    .hotlines h4{
+        color: white;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .hotlinesBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        color: white;
+        background-image: linear-gradient(to right top, #070063, #002070, #003374, #004372, #00516d, #00576a, #005c64, #00605b, #006054, #00604c, #005f43, #005e38);
+    }
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    .testimonials{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 0px;
+        text-align: center;
+        padding-top: 0px;
+        color: white;
+
+    }
+
+
+    .testimonialsrow{
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction : column; 
+    flex-flow : wrap;
+}
+ 
+
+    .testimonials-col{
+        margin: auto;
+        flex-basis: 100%;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .testimonials-col p{
+        font-style: italic;
+        font-size: 21px;
+        color: white;
+    }
+
+    .testimonials h1{
+    
+        font-size: 55px;
+        padding-bottom: 7px;
+    }
+
+    .testimonials h5{
+        line-height: 70px;
+        font-size: 26px;
+        margin-bottom: 20PX;
+    }
+
+    .testimonials h2{
+        line-height: 25px;
+        font-size: 28px;
+    }
+
+    .testimonialsBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+     
+}
 
 
 
@@ -2972,6 +3438,341 @@ footer { position: static; }
 
 
 
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+    .howtouse{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+        color: white;
+        transition: 0s;
+
+    }
+
+    .howtouse h1{
+        padding-top: 0px;
+        font-size: 70Px;
+    }
+
+    .howtouseBG{
+        width: 100%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+        font-size: 2px;
+        background: #005C97;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+     .howtouseicons{
+        display: block;
+        margin: auto;
+        height: 100px;
+        width: 100px;
+
+        }
+
+    
+
+    .howtouse h4{
+        font-size: 26px;
+        font-weight: 600;
+        text-align: center;
+        margin: 10px 0;
+        color: black;
+        
+
+    }
+
+
+    .howtouse p{
+        color: black;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 10px;
+
+    }
+
+    .howtouserow{
+        padding-top: 20px;
+       flex-direction: row;
+ 
+    }
+
+
+    .howtouse-col{
+        margin: auto;
+        flex-basis: 30%;
+        background: white;
+        border-radius: 10px;
+        margin-bottom: 10%;
+        margin-top: 0px;
+        padding:20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+       .howtouse-col:hover{
+        box-shadow: none;
+        
+    }
+    .howtouse:hover{
+        box-shadow: none; ;
+       
+
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+    .ourservices-col{
+        flex-basis:46%;
+        color: white;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+        background:rgba(0,0,0,0.3);
+        box-sizing: border-box;
+        transition: 0s;
+    
+    }
+
+    .ourservices-col:hover{
+   
+        box-shadow: none;
+        transition: 0s;
+    }
+
+    .ourservices-col img{
+        width: 60%;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+    }
+
+
+    .ourservices{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+        font-size: 22px;
+        color: white;
+    }
+
+
+
+    .ourservices-col p{
+        color: white;
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    .ourservices-col h5{
+        font-size: 27px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-style: bold;
+        font-weight: 800;
+        text-align: center;
+        margin: 0px 0;
+    }
+
+
+    .ourservices h1{
+        font-size: 60px;
+        padding-bottom: 40px;
+        padding-top: 30px;
+    }
+
+    .ourservices h4{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+        font-size: 30px;
+        color: white;
+        line-height: 40px;
+
+    }
+
+
+    .ourservicesrow{
+        padding-top: 0px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction : row; 
+        flex-flow : wrap;
+     
+ 
+        }
+
+    .ourservicesBG{
+        width: 100%;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        font-size: 60px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .selectbtn{
+        display: inline-block;
+        text-decoration: underline;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 0;
+        font-size: 20px;
+        background: none;
+        cursor: pointer;
+        transition: 0.5s;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+
+    .selectbtn:hover{
+        display: inline-block;
+        text-decoration: underline;
+        color: #dc143c;
+        border: none;
+        padding: 0;
+        font-size: 20px;
+        border-radius: 5px;
+        background: none;
+        cursor: pointer;
+        transition: 0.5s;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+
+
+    
+    .textonwhatsappbtn{
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        padding: 12px 34px;
+        font-size: 32px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+
+    .textonwhatsappbtn:hover{
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        padding: 12px 34px;
+        font-size: 30px;
+        border-radius: 5px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+     
+
+}
+
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+    .hotlines{
+        width: 80%;
+        margin-bottom: 10px;
+        margin: auto;
+        text-align: center;
+        padding-top: 0px;
+        color: white;
+
+    }
+
+
+    .hotlines-col{
+        flex-basis: 100%;
+        border-radius: 10px;
+        margin-bottom: 23px;
+        padding-bottom: 0px;
+        position: relative;
+        overflow: hidden;
+        color: white;
+    
+    }
+
+    .hotlines h1{
+        padding-top: 40px; 
+        font-size: 70px;
+        line-height: 30px;
+
+    }
+
+
+    .hotlines h2{
+        padding-top: 20px;
+        font-size: 31px;
+        line-height: 39px;
+
+    }
+
+    .hotlines h4{
+        color: white;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .hotlinesBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: white;
+        background-image: linear-gradient(to right top, #070063, #002070, #003374, #004372, #00516d, #00576a, #005c64, #00605b, #006054, #00604c, #005f43, #005e38);
+    }
+
+
 }
 
 
@@ -2980,258 +3781,81 @@ footer { position: static; }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
 
-    .about{
-            width: 80%;
-            margin: auto;
-            padding-top: 0px;
-            text-align: center;
-            padding-bottom: 50px;
-            font-size: 6px;
-            color: white;
-            transition: 0.5s;
-            color: white;
-        }
-    
-    
-    
-        .aboutBG{
-            width: 100%;
-            padding-bottom: 0px;
-            background-size: cover;
-            margin: auto;
-            text-align: center;
-            padding-top: 1px;
-            font-size: 5px;
-            background: #005C97;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            transition: 0.5s;
-    
-        }
-    
-    
-    
-    
-        .about-col h1{
-            color: black;
-          font-size: 65px;
-          padding-top: 50px;
-          padding-bottom: 0px;
-        }
-    
-    
-    
-        .about h4{
-            font-size: 30px;
-            font-weight: 600;
-            text-align: center;
-            font-weight: 600;
-            margin: 10px 0;
-            color: black;
-            transition: 0.5s;
-    
-        }
-    
-         .about h1{
-            padding-bottom: 30px;
-            font-size: 85px;
-    
-        }
-    
-        .about p{
-            color: black;
-            text-align: left;
-            font-size: 26px;
-            line-height: 40px;
-            padding: 5px;
-    
-    
-        }
-    
-        .aboutrow{
-            margin-top: 1px;
-            display: flex;
-            justify-content: center;
-            flex-direction : column; 
-            flex-flow : wrap;
-            margin-bottom: 90px;
-     
-        }
-    
-    
-        
-    
-            .about{
-            width: 80%;
-            margin: auto;
-            padding-top: 50px;
-            margin-top: 40px;
-            text-align: center;
-            padding-bottom: 50px;
-            font-size: 65px;
-            color: white;
-            transition: 0.5s;
-            color: white;
-        }
-    
-    
-    
-    
-    
-    
-        .aboutfounderrow{
-            margin-top: 5px;
-            display: flex;
-            justify-content: center;
-            flex-direction : row; 
-            flex-flow : wrap;
-            margin-bottom: 8%;
-            margin: 0px;
-     
-        }
-    
-    
-    
-        .aboutfounder-col{
-            width: 80%;
-            color: black;
-            margin: 0px;
-            flex-basis: 50%;
-            justify-content: space-between;
-            background: transparent;
-            border-radius: 10px;
-            padding-bottom: 0%;
-            box-sizing: border-box;
-            transition: 0.5s;
-        }
-    
-           .aboutfounderrow img{
-            width: 90%;
-            border-radius: 10px;
-            top: 0;
-           left: 0;
-    
-        }
-    
-    
-    
-           .aboutfounder h1{
-            color: white;
-            text-align: center;
-            font-size: 78px;
-            line-height: 35px;
-            padding-bottom: 80px;
-            margin-top: 8%;
-            
-    
-        }
-    
-    
-    
-          .aboutfounder-col h5{
-            color: white;
-            text-align: center;
-            font-size: 26px;
-            line-height: 55px;
-            padding-bottom: 0px;
-            
-    
-        }
-    
-          .aboutfounder-col p{
-            color: white;
-            text-align: center;
-            font-size: 23px;
-            line-height: 5px;
-            padding-bottom: 50px;
-            
-    
-        }
-    
-    
-        .about-whatwedo-col{
-         color: black;
-            margin: 10px;
-            flex-basis: 100%;
-    
-            background: white;
-            border-radius: 10px;
-            margin-bottom: 8%;
-            margin-top: 0px;
-            padding:20px 12px;
-            box-sizing: border-box;
-            transition: 0.5s;
-        }
-    
-         
-          .about-whatwedo-col h1{
-          color: black;
-          font-size: 50px;
-          padding-top: 20px;
-          padding-bottom: 20px;
-        }
-    
-    
-    
-         .about-whatwedo-col h4{
-            font-size: 30px;
-    
-            font-weight: 600;
-            text-align: center;
-            font-weight: 600;
-            margin: 10px 0;
-            color: black;
-            transition: 0.5s;
-    
-        }
-    
-    
-    
-         .about-whatwedo-col p{
-            color: black;
-            font-size: 22px;
-            line-height: 35px;
-            padding-bottom: 50px;
-            
-    
-        }
-    
-    
-        .about-col{
-            margin: 10px;
-            flex-basis: 100%;
-            background: white;
-            border-radius: 10px;
-            margin-bottom: 5%;
-            padding: 17px;
-            box-sizing: border-box;
-            transition: 0.5s;
-        }
-    
-    
-        .about-col:hover{
-            box-shadow: 0 0 20px 0px #20B2AA ;
-            transition: 0.5s;
-    
-        }
-        .about:hover{
-            box-shadow: 0 0 20px 0px #20B2AA ;
-            transition: 0.5s;
-            font-size: 60px; 
-            transition: 0.5s;
-    
-        }
+    .testimonials{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 0px;
+        text-align: center;
+        padding-top: 0px;
+        color: white;
+
     }
+
+
+    .testimonialsrow{
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction : column; 
+    flex-flow : wrap;
+}
+ 
+
+    .testimonials-col{
+        margin: auto;
+        flex-basis: 100%;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        position: relative;
+        overflow: hidden;
+        
+    }
+
+    .testimonials-col p{
+        font-style: italic;
+        font-size: 25px;
+        color: white;
+    }
+
+    .testimonials h1{
     
-    
-    
+        font-size: 55px;
+        padding-bottom: 7px;
+        padding-top: 30px;
+    }
+
+    .testimonials h5{
+        line-height: 70px;
+        font-size: 28px;
+        margin-bottom: 20PX;
+    }
+
+    .testimonials h2{
+        line-height: 35px;
+        font-size: 40px;
+    }
+
+    .testimonialsBG{
+        width: 100%;
+        transition: .1s;
+        background-size: cover;
+        margin: auto;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 70px;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+     
+}
 
 
 
-
-
-
-
+/* MEDIA QUERY FOR BECOMEA PARTNER SMALL SCERANS, LAPTOPS*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
 
     .becomeapartner{
