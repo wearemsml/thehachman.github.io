@@ -590,7 +590,7 @@ html{
         left: 0px;
         padding-top: 10px;
         padding-bottom: 20px;
-        text-decoration: none;
+        text-decoration: underline 1px blu6;
         font-size: 16px;
         background: rgb(0, 60, 129);
         min-width: 200px;
@@ -601,7 +601,7 @@ html{
       .dropdown2-content a {
         color: white;
         padding: 7px 16px;
-        text-decoration: none;
+        text-decoration: underline;
         display: block;
         font-size: 16px;
       }
@@ -889,6 +889,7 @@ html{
 
 
     .selectbtn:hover{
+        margin: auto;
         display: inline-block;
         text-decoration: none;
         color: white;
@@ -1771,7 +1772,7 @@ html{
         color: white;
         border: 1px solid #dc143c;
         padding: 12px 34px;
-        font-size: 17px;
+        font-size: 16px;
         border-radius: 5px;
         background: #dc143c;
         cursor: pointer;
@@ -1833,12 +1834,13 @@ html{
     
     
     .selectbtn:hover{
+        margin: auto;
         display: inline-block;
-        text-decoration: none;
+        text-decoration: underline;
         color: white;
         border: 1px solid #dc143c;
-        padding: 12px 34px;
-        font-size: 17px;
+        padding: 5px 24px;
+        font-size: 16px;
         border-radius: 5px;
         background: #dc143c;
         cursor: pointer;
@@ -2494,7 +2496,7 @@ footer { position: static; }
       .dropdown2-content a {
         color: white;
         padding: 7px 16px;
-        text-decoration: none;
+        text-decoration: underline;
         display: block;
         font-size: 16px;
       }
@@ -2873,10 +2875,11 @@ footer { position: static; }
     .selectbtn:hover{
         display: inline-block;
         text-decoration: underline;
-        color: #dc143c;
+        color: white;
         border: none;
         padding: 0;
-        font-size: 20px;
+        font-size: 16px;
+        padding: 12px 34px;
         border-radius: 5px;
         background: #dc143c;
         cursor: pointer;
@@ -3736,6 +3739,7 @@ footer { position: static; }
 
 
     .selectbtn:hover{
+        margin: auto;
         display: inline-block;
         text-decoration: none;
         color: white;
