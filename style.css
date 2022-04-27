@@ -794,13 +794,20 @@ html{
     }
 
 
-    .ourservices-col h5{
-        font-size: 27px;
+    .ourservicesrow .ourservices-col h1{
+        font-size: 23px;
+      
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 10px;
         text-align: center;
-        margin: 10px 0;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        margin: 0px;
+        
+    
     }
+    
 
     .ourservices h4{
         width: 80%;
@@ -829,9 +836,16 @@ html{
         padding-bottom: 50px;
     }
 
-    .ourservices-col p{
+    .ourservicesrow .ourservices-col h2{
         color: white;
+        font-family: Arial, Helvetica, sans-serif ;
         font-size: 18px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+       
     }
 
 
@@ -962,14 +976,14 @@ html{
     }
 
     .hotlines h4 a{
-        color:  rgb(104, 165, 255);
+        color: rgb(0, 162, 255);
         font-size: 30px;
         line-height: 50px;
         text-decoration: underline;
     }
 
     .hotlines h4 a:hover{
-        color: rgb(59, 137, 255);
+        color: rgb(1, 133, 209);
         font-size: 30px;
         line-height: 50px;
         text-decoration: underline;
@@ -1664,20 +1678,33 @@ html{
 
 
 
-    .ourservices-col p{
+    .ourservicesrow .ourservices-col h2{
         color: white;
-        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif ;
         font-size: 15px;
+        font-weight: 300;
+        margin: 0px;
+        padding-top: 0px;
+        padding: 10px;
+        line-height: 25px;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+       
     }
 
-    .ourservices-col h5{
+    .ourservicesrow .ourservices-col h1{
         font-size: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+      
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 10px;
         text-align: center;
-        margin: 0px 0;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        margin: 0px;
+        
+    
     }
 
 
@@ -1724,32 +1751,31 @@ html{
 
     }
     .selectbtn{
+        margin: auto;
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
-        padding: 0;
-        font-size: 12px;
-        background: none;
+        padding: 12px 34px;
+        font-size: 16px;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
     }
 
 
     .selectbtn:hover{
         display: inline-block;
-        text-decoration: underline;
-        color: #dc143c;
-        border: none;
-        padding: 0;
-        font-size: 12px;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #dc143c;
+        padding: 12px 34px;
+        font-size: 17px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
     }
 
 
@@ -1787,6 +1813,50 @@ html{
 
     }
 
+
+
+
+    .selectbtn{
+        margin: auto;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #1167b1;
+        border-radius: 5px;
+        padding: 5px 24px;
+        font-size: 16px;
+        background: #1167b1;
+        cursor: pointer;
+        transition: 0.5s;
+    
+    }
+    
+    
+    .selectbtn:hover{
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #dc143c;
+        padding: 12px 34px;
+        font-size: 17px;
+        border-radius: 5px;
+        background: #dc143c;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
     
 }
 
@@ -1817,6 +1887,23 @@ html{
         color: white;
     
     }
+
+
+    .row .hotlines-col a{
+        font-size: 20px;
+        color: rgb(0, 162, 255);
+        line-height: 30px;
+    
+    }
+
+
+    .row .hotlines-col a:hover{
+        font-size: 20px;
+        color: rgb(0, 124, 196);
+        line-height: 30px;
+    
+    }
+
 
     .hotlines h1{
         padding-top: 20px; 
@@ -2467,22 +2554,6 @@ footer { position: static; }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .header{
     
     width: 100%;
@@ -2713,20 +2784,32 @@ footer { position: static; }
 
 
 
-    .ourservices-col p{
+    .ourservicesrow .ourservices-col h2{
         color: white;
-        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif ;
         font-size: 24px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+       
     }
 
-    .ourservices-col h5{
+    .ourservicesrow .ourservices-col h1{
         font-size: 35px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+      
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 0px;
         text-align: center;
-        margin: 0px 0;
+        margin: auto;
+        margin-bottom: 0px;
+        margin-top: 10px;
+        
+        
+    
     }
 
 
@@ -2773,18 +2856,17 @@ footer { position: static; }
 
     }
     .selectbtn{
+        margin: auto;
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
-        padding: 0;
-        font-size: 20px;
-        background: none;
+        padding: 12px 34px;
+        font-size: 16px;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
 
 
@@ -2796,7 +2878,7 @@ footer { position: static; }
         padding: 0;
         font-size: 20px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
         padding-bottom: 10px;
@@ -3541,6 +3623,7 @@ footer { position: static; }
     .ourservices-col{
         flex-basis:46%;
         color: white;
+        padding: 10px;
         border-radius: 10px;
         margin-bottom: 30px;
         position: relative;
@@ -3638,34 +3721,31 @@ footer { position: static; }
 
     }
     .selectbtn{
+        margin: auto;
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
-        padding: 0;
+        padding: 12px 34px;
         font-size: 20px;
-        background: none;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
 
 
     .selectbtn:hover{
         display: inline-block;
-        text-decoration: underline;
-        color: #dc143c;
-        border: none;
-        padding: 0;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #dc143c;
+        padding: 12px 34px;
         font-size: 20px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
 
 

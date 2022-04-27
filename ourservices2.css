@@ -668,101 +668,6 @@ html{
 
 
 
-    .howtouse{
-        width: 80%;
-        margin: auto;
-        margin-top: 50px;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 50px;
-        font-size: 65px;
-        color: white;
-        transition: 0.5s;
-
-    }
-
-
-
-    .howtouseBG{
-        width: 100%;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 50px;
-        font-size: 65px;
-        background: #005C97;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        transition: 0.5s;
-
-    }
-
-
-    .howtouseicons{
-        height: 100px;
-        width: 100px;
-    }
-
-
-    .howtouse h4{
-        font-size: 30px;
-
-        font-weight: 600;
-        text-align: center;
-        font-weight: 600;
-        margin: 10px 0;
-        color: black;
-        transition: 0.5s;
-
-    }
-
-
-
-    .howtouse p{
-        color: black;
-        font-size: 25px;
-        line-height: 35px;
-        padding: 10px;
-
-    }
-    .howtouserow{
-        margin-top: 5px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction : row; 
-        flex-flow : wrap;
- 
-    }
-
-
-    .howtouse-col{
-        margin: 10px;
-        flex-basis: 30%;
-        background: white;
-        border-radius: 10px;
-        margin-bottom: 10%;
-        margin-top: 50px;
-        padding:20px 12px;
-        box-sizing: border-box;
-        transition: 0.5s;
-    }
-
-
-    .howtouse-col:hover{
-        box-shadow: 0 0 20px 0px #20B2AA ;
-        transition: 0.5s;
-    }
-    .howtouse:hover{
-        box-shadow: 0 0 20px 0px #20B2AA ;
-        transition: 0.5s;
-        font-size: 60px; 
-        transition: 0.5s;
-
-    }
-
-
-
-
    
 
     .ourservices-col{
@@ -794,12 +699,18 @@ html{
     }
 
 
-    .ourservices-col h5{
-        font-size: 27px;
+    .ourservicesrow .ourservices-col h1{
+        font-size: 23px;
+      
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 10px;
         text-align: center;
-        margin: 10px 0;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        margin: 0px;
+        
+    
     }
 
     .ourservices h4{
@@ -829,11 +740,17 @@ html{
         padding-bottom: 50px;
     }
 
-    .ourservices-col p{
+    .ourservicesrow .ourservices-col h2{
         color: white;
+        font-family: Arial, Helvetica, sans-serif ;
         font-size: 18px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+       
     }
-
 
     .ourservicesrow{
         margin-top: 5px;
@@ -926,224 +843,7 @@ html{
 
 
 
-    
-    .hotlines{
-        width: 80%;
-        margin: auto;
-        margin-top: 30px;
-        text-align: center;
-        padding-top: 30px;
-        font-size: 65px;
-        color: white;
-
-    }
-
-
-    .hotlines-col{
-        flex-basis: 100%;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        position: relative;
-        overflow: hidden;
-        color: white;
-    
-    }
-    .hotlines h2{
-        font-size: 40px;
-        line-height: 70px;
-
-    }
-
-    .hotlines h4{
-        color: white;
-        font-size: 30px;
-        line-height: 50px;
-    }
-
-    .hotlines h4 a{
-        color:  rgb(104, 165, 255);
-        font-size: 30px;
-        line-height: 50px;
-        text-decoration: underline;
-    }
-
-    .hotlines h4 a:hover{
-        color: rgb(59, 137, 255);
-        font-size: 30px;
-        line-height: 50px;
-        text-decoration: underline;
-    }
-
-    .hotlinesBG{
-        width: 100%;
-        transition: .1s;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 10px;
-        font-size: 0px;
-        color: white;
-        background-image: linear-gradient(to right top, #070063, #002070, #003374, #004372, #00516d, #00576a, #005c64, #00605b, #006054, #00604c, #005f43, #005e38);
-    }
-
-
-
-
-
-    
-    .testimonials{
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding-top: 80px;
-        color: white;
-
-    }
-
-    .testimonialsrow{
-        margin-top: 5px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction : row; 
-        flex-flow : wrap;
- 
-    }
-
-
-
-    .testimonials-col{
-        flex-basis: 22%;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        padding-bottom: 20px;
-        position: relative;
-        overflow: hidden;
-        
-    }
-
-    .testimonials-col p{
-        font-style: italic;
-        font-size: 20px;
-        color: white;
-    }
-
-    .testimonials h1{
-        font-size: 100px;
-        padding-bottom: 10px;
-    }
-
-    .testimonials h5{
-        line-height: 80px;
-        font-size: 33px;
-    }
-
-
-    .testimonialsBG{
-        width: 100%;
-        transition: .1s;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 100px;
-        background: #141E30;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-    }
-
-
-    .testimonials h2{
-        line-height: 50px;
-        font-size: 50px;
-        padding-bottom: 20px;
-    }
-
-    .testimonialsBG{
-        width: 100%;
-        transition: .1s;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 100px;
-        background: #141E30;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-    }
-
-
-    .becomeapartner{
-        width: 80%;
-        margin: auto;
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        padding: 100px 0;
-        font-size: 65px;
-        color: white;
-        top: 100px;
-
-    }
-
-
-    .becomeapartnerBG{
-        width: 100%;
-        margin: auto;
-        background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(images/partnerwithusimage.jpg);
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        padding: 100px 0;
-        font-size: 65px;
-        color: white;
-        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
-  
-    }
-
-
-    .becomeapartner h2{
-        font-size: 35px;
-        line-height: 70px;
-        color: white;
-        margin-bottom: 40px;
-        padding: 0;
-    }
-
-
-    .becomeapartnerbtn{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        border: 1px solid #dc143C;
-        padding: 12px 34px;
-        font-size: 25px;
-        background: #dc143C;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: 0.5s;
-    }
-
-
-    .becomeapartnerbtn:hover{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        border: 1px solid #dc143c;
-        padding: 12px 34px;
-        font-size: 28px;
-        background: #dc143c;
-        cursor: pointer;
-        transition: 0.5s;
-        border-radius: 5px;
-    
-
-    }
+   
 
 
     #backtotopbtn {
@@ -1528,97 +1228,6 @@ html{
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px){
-
-    .howtouse{
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding-bottom: 10px;
-        color: white;
-        transition: 0s;
-
-    }
-
-    .howtouse h1{
-        padding-top: 0px;
-        font-size: 40Px;
-    }
-
-    .howtouseBG{
-        width: 100%;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 0px;
-        font-size: 2px;
-        background: #005C97;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
-
-     .howtouseicons{
-        display: block;
-        margin: auto;
-        height: 30px;
-        width: 30px;
-
-        }
-
-    
-
-    .howtouse h4{
-        font-size: 22px;
-        font-weight: 600;
-        text-align: center;
-        margin: 10px 0;
-        color: black;
-        
-
-    }
-
-
-    .howtouse p{
-        color: black;
-        font-size: 16px;
-        line-height: 22px;
-        padding: 10px;
-
-    }
-
-    .howtouserow{
-        padding-top: 20px;
-       flex-direction: column;
- 
-    }
-
-
-    .howtouse-col{
-        margin: auto;
-        flex-basis: 2%;
-        background: white;
-        border-radius: 10px;
-        margin-bottom: 10%;
-        margin-top: 0px;
-        padding:20px 12px;
-        box-sizing: border-box;
-        transition: 0.5s;
-    }
-
-       .howtouse-col:hover{
-        box-shadow: none;
-        
-    }
-    .howtouse:hover{
-        box-shadow: none; ;
-       
-
-    }
-
-
-}
-
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
@@ -1664,22 +1273,33 @@ html{
 
 
 
-    .ourservices-col p{
+    .ourservicesrow .ourservices-col h2{
         color: white;
-        padding-bottom: 5px;
-        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        font-weight: 1;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+       
     }
 
-    .ourservices-col h5{
-        font-size: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+    .ourservicesrow .ourservices-col h1{
+        font-size: 23px;
+        color: white;
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 0px;
+        padding: 10px;
         text-align: center;
-        margin: 0px 0;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        margin: 0px;
+        
+    
     }
-
 
     .ourservices h1{
         font-size: 40px;
@@ -1725,16 +1345,16 @@ html{
     }
     .selectbtn{
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
         border: none;
         border-radius: 5px;
-        padding: 0;
+        padding: 7px 20px;
         font-size: 12px;
-        background: none;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
 
@@ -1746,10 +1366,10 @@ html{
         padding: 0;
         font-size: 12px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
 
@@ -1797,221 +1417,7 @@ html{
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 480px){
-    .hotlines{
-        width: 80%;
-        margin-bottom: 10px;
-        margin: auto;
-        text-align: center;
-        padding-top: 0px;
-        color: white;
 
-    }
-
-
-    .hotlines-col{
-        flex-basis: 100%;
-        border-radius: 10px;
-        margin-bottom: 23px;
-        padding-bottom: 0px;
-        position: relative;
-        overflow: hidden;
-        color: white;
-    
-    }
-
-    .hotlines h1{
-        padding-top: 20px; 
-        font-size: 45px;
-        line-height: 30px;
-
-    }
-
-
-    .hotlines h2{
-        padding-top: 20px;
-        font-size: 21px;
-        line-height: 30px;
-
-    }
-
-    .hotlines h4{
-        color: white;
-        font-size: 20px;
-        line-height: 35px;
-    }
-
-    .hotlinesBG{
-        width: 100%;
-        transition: .1s;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 10px;
-        color: white;
-        background-image: linear-gradient(to right top, #070063, #002070, #003374, #004372, #00516d, #00576a, #005c64, #00605b, #006054, #00604c, #005f43, #005e38);
-    }
-
-
-}
-
-
-
-
-
-
-@media only screen and (min-width: 320px) and (max-width: 480px)   {
-
-    .testimonials{
-        width: 80%;
-        margin: auto;
-        margin-bottom: 0px;
-        text-align: center;
-        padding-top: 0px;
-        color: white;
-
-    }
-
-
-    .testimonialsrow{
-    margin-top: 1px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction : column; 
-    flex-flow : wrap;
-}
- 
-
-    .testimonials-col{
-        margin: auto;
-        flex-basis: 100%;
-        border-radius: 10px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        position: relative;
-        overflow: hidden;
-        
-    }
-
-    .testimonials-col p{
-        font-style: italic;
-        font-size: 17px;
-        color: white;
-    }
-
-    .testimonials h1{
-        font-size: 30px;
-        padding-bottom: 7px;
-    }
-
-    .testimonials h5{
-        line-height: 70px;
-        font-size: 21px;
-    }
-
-    .testimonials h2{
-        line-height: 25px;
-        font-size: 19px;
-    }
-
-    .testimonialsBG{
-        width: 100%;
-        transition: .1s;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 70px;
-        background: #141E30;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
-
-     
-}
-
-
-
-
-
-
-@media only screen and (min-width: 320px) and (max-width: 480px)   {
-
-    .becomeapartner{
-        width: 80%;
-        margin: auto;
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        padding: 50px 0;
-        color: white;
-       
-    }
-
-
-    .becomeapartnerBG{
-        width: 100%;
-        margin: auto;
-        background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(images/partnerwithusimage.jpg);
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        padding: 0px 0;
-        color: white;
-        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
-  
-    }
-
-    .becomeapartner h2{
-        font-size: 20px;
-        line-height: 30px;
-        color: white;
-        margin-bottom: 10px;
-        padding-bottom: 0PX;
-    }
-
-     .becomeapartner h1{
-        font-size: 27px;
-        color: white;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-
-
-    .becomeapartnerbtn{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        border: 1px solid #dc143C;
-        padding: 10px 20px;
-        font-size: 17px;
-        background: #dc143C;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: 0.5s;
-    }
-
-
-    .becomeapartnerbtn:hover{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        border: 1px solid #dc143c;
-        padding: 12px 34px;
-        font-size: 28px;
-        background: #dc143c;
-        cursor: pointer;
-        transition: 0.5s;
-        border-radius: 5px;
-        
-
-    }
-
-
-}
 
 
 
@@ -2577,96 +1983,7 @@ footer { position: static; }
 
 
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
 
-    .howtouse{
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding-bottom: 10px;
-        color: white;
-        transition: 0s;
-
-    }
-
-    .howtouse h1{
-        padding-top: 0px;
-        font-size: 40Px;
-    }
-
-    .howtouseBG{
-        width: 100%;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 0px;
-        font-size: 2px;
-        background: #005C97;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
-
-     .howtouseicons{
-        display: block;
-        margin: auto;
-        height: 70px;
-        width: 70px;
-
-        }
-
-    
-
-    .howtouse h4{
-        font-size: 22px;
-        font-weight: 600;
-        text-align: center;
-        margin: 10px 0;
-        color: black;
-        
-
-    }
-
-
-    .howtouse p{
-        color: black;
-        font-size: 16px;
-        line-height: 22px;
-        padding: 10px;
-
-    }
-
-    .howtouserow{
-        padding-top: 20px;
-       flex-direction: column;
- 
-    }
-
-
-    .howtouse-col{
-        margin: auto;
-        flex-basis: 2%;
-        background: white;
-        border-radius: 10px;
-        margin-bottom: 10%;
-        margin-top: 0px;
-        padding:20px 12px;
-        box-sizing: border-box;
-        transition: 0.5s;
-    }
-
-       .howtouse-col:hover{
-        box-shadow: none;
-        
-    }
-    .howtouse:hover{
-        box-shadow: none; ;
-       
-
-    }
-
-
-}
 
 
 
@@ -2715,20 +2032,32 @@ footer { position: static; }
 
 
 
-    .ourservices-col p{
+    .ourservicesrow .ourservices-col h2{
         color: white;
-        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif ;
         font-size: 24px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+       
     }
 
-    .ourservices-col h5{
+    .ourservicesrow .ourservices-col h1{
         font-size: 35px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+      
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 10px;
         text-align: center;
-        margin: 0px 0;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        margin: 0px;
+       
+        
+    
     }
 
 
@@ -2776,13 +2105,13 @@ footer { position: static; }
     }
     .selectbtn{
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
         border: none;
         border-radius: 5px;
-        padding: 0;
+        padding: 12px 34px;
         font-size: 20px;
-        background: none;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
         padding-bottom: 10px;
@@ -2795,10 +2124,10 @@ footer { position: static; }
         text-decoration: underline;
         color: #dc143c;
         border: none;
-        padding: 0;
+        padding: 12px 34px;
         font-size: 20px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
         padding-bottom: 10px;
@@ -2851,224 +2180,6 @@ footer { position: static; }
 
 
 
-@media only screen and (min-width: 481px) and (max-width: 768px){
-    .hotlines{
-        width: 80%;
-        margin-bottom: 10px;
-        margin: auto;
-        text-align: center;
-        padding-top: 0px;
-        color: white;
-
-    }
-
-
-    .hotlines-col{
-        flex-basis: 100%;
-        border-radius: 10px;
-        margin-bottom: 23px;
-        padding-bottom: 0px;
-        position: relative;
-        overflow: hidden;
-        color: white;
-    
-    }
-
-    .hotlines h1{
-        padding-top: 20px; 
-        font-size: 70px;
-        line-height: 30px;
-
-    }
-
-
-    .hotlines h2{
-        padding-top: 20px;
-        font-size: 32px;
-        line-height: 39px;
-
-    }
-
-    .hotlines h4{
-        color: white;
-        font-size: 25px;
-        line-height: 35px;
-    }
-
-    .hotlinesBG{
-        width: 100%;
-        transition: .1s;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 10px;
-        color: white;
-        background-image: linear-gradient(to right top, #070063, #002070, #003374, #004372, #00516d, #00576a, #005c64, #00605b, #006054, #00604c, #005f43, #005e38);
-    }
-
-
-}
-
-
-
-
-
-
-@media only screen and (min-width: 481px) and (max-width: 768px){
-
-    .testimonials{
-        width: 80%;
-        margin: auto;
-        margin-bottom: 0px;
-        text-align: center;
-        padding-top: 0px;
-        color: white;
-
-    }
-
-
-    .testimonialsrow{
-    margin-top: 1px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction : column; 
-    flex-flow : wrap;
-}
- 
-
-    .testimonials-col{
-        margin: auto;
-        flex-basis: 100%;
-        border-radius: 10px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        position: relative;
-        overflow: hidden;
-        
-    }
-
-    .testimonials-col p{
-        font-style: italic;
-        font-size: 21px;
-        color: white;
-    }
-
-    .testimonials h1{
-    
-        font-size: 55px;
-        padding-bottom: 7px;
-    }
-
-    .testimonials h5{
-        line-height: 70px;
-        font-size: 26px;
-        margin-bottom: 20PX;
-    }
-
-    .testimonials h2{
-        line-height: 25px;
-        font-size: 28px;
-    }
-
-    .testimonialsBG{
-        width: 100%;
-        transition: .1s;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 70px;
-        background: #141E30;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
-
-     
-}
-
-
-
-
-
-
-
-@media only screen and (min-width: 481px) and (max-width: 768px){
-
-    .becomeapartner{
-        width: 80%;
-        margin: auto;
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        padding: 50px 0;
-        color: white;
-       
-    }
-
-
-    .becomeapartnerBG{
-        width: 100%;
-        margin: auto;
-        background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url(images/partnerwithusimage.jpg);
-        background-position: center;
-        background-size: cover;
-        text-align: center;
-        padding: 0px 0;
-        color: white;
-        box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
-  
-    }
-
-    .becomeapartner h2{
-        font-size: 23px;
-        line-height: 30px;
-        color: white;
-        margin-bottom: 10px;
-        padding-bottom: 0PX;
-    }
-
-     .becomeapartner h1{
-        font-size: 45px;
-        color: white;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-
-
-    .becomeapartnerbtn{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        border: 1px solid #dc143C;
-        padding: 10px 20px;
-        font-size: 20px;
-        background: #dc143C;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: 0.5s;
-    }
-
-
-    .becomeapartnerbtn:hover{
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        border: 1px solid #dc143c;
-        padding: 12px 34px;
-        font-size: 20px;
-        background: #dc143c;
-        cursor: pointer;
-        transition: 0.5s;
-        border-radius: 5px;
-        
-
-    }
-
-
-}
 
 
 
@@ -3437,106 +2548,10 @@ footer { position: static; }
 
 
 
-
-
-
-
-
-
-
 }
 
 
-@media only screen and (min-width: 769px) and (max-width: 1024px){
 
-    .howtouse{
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding-bottom: 10px;
-        color: white;
-        transition: 0s;
-
-    }
-
-    .howtouse h1{
-        padding-top: 0px;
-        font-size: 70Px;
-    }
-
-    .howtouseBG{
-        width: 100%;
-        background-size: cover;
-        margin: auto;
-        text-align: center;
-        padding-top: 0px;
-        font-size: 2px;
-        background: #005C97;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    }
-
-     .howtouseicons{
-        display: block;
-        margin: auto;
-        height: 100px;
-        width: 100px;
-
-        }
-
-    
-
-    .howtouse h4{
-        font-size: 26px;
-        font-weight: 600;
-        text-align: center;
-        margin: 10px 0;
-        color: black;
-        
-
-    }
-
-
-    .howtouse p{
-        color: black;
-        font-size: 20px;
-        line-height: 32px;
-        padding: 10px;
-
-    }
-
-    .howtouserow{
-        padding-top: 20px;
-       flex-direction: row;
- 
-    }
-
-
-    .howtouse-col{
-        margin: auto;
-        flex-basis: 30%;
-        background: white;
-        border-radius: 10px;
-        margin-bottom: 10%;
-        margin-top: 0px;
-        padding:20px 12px;
-        box-sizing: border-box;
-        transition: 0.5s;
-    }
-
-       .howtouse-col:hover{
-        box-shadow: none;
-        
-    }
-    .howtouse:hover{
-        box-shadow: none; ;
-       
-
-    }
-
-
-}
 
 
 
@@ -3581,22 +2596,32 @@ footer { position: static; }
 
 
 
-    .ourservices-col p{
+    .ourservicesrow .ourservices-col h2{
         color: white;
-        padding-bottom: 5px;
+        font-family: Arial, Helvetica, sans-serif ;
         font-size: 20px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+       
     }
 
-    .ourservices-col h5{
+    .ourservicesrow .ourservices-col h1{
         font-size: 27px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding-top: 0px;
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 5px;
         text-align: center;
-        margin: 0px 0;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        margin: 0px;
+        
+    
     }
-
 
     .ourservices h1{
         font-size: 60px;
@@ -3643,13 +2668,13 @@ footer { position: static; }
     }
     .selectbtn{
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
         border: none;
         border-radius: 5px;
-        padding: 0;
+        padding: 12px 34px;
         font-size: 20px;
-        background: none;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
         padding-bottom: 10px;
@@ -3662,10 +2687,10 @@ footer { position: static; }
         text-decoration: underline;
         color: #dc143c;
         border: none;
-        padding: 0;
+        padding: 12px 34px;
         font-size: 20px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
         padding-bottom: 10px;
