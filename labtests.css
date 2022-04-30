@@ -5,6 +5,136 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+#cookiePopup {
+    background: white;
+    width: 25%;
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+    box-shadow: 0px 0px 15px #000329;
+    padding: 5px 10px;
+    z-index: 11;
+    padding: 20px 20px 20px 20px;
+   
+  }
+  
+    #cookiePopup p a{
+    text-align: left;
+    font-size: 15px;
+    color: #0044ff;
+  }
+  #cookiePopup button{
+    width: 100%;
+    border: navajowhite;
+    background: #097fb7;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.load{position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);
+    
+    width:100px;
+    height:100px;
+    z-index: 10;
+  }
+  .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+  
+  .load :first-child{background:#228B22;animation-delay:-1.5s}
+  .load :nth-child(2){background: #1167b1;animation-delay:-1s}
+  .load :nth-child(3){background:green;animation-delay:-0.5s}
+  .load :last-child{background:#dc143c}
+  
+  @keyframes spin{
+    0%,100%{transform:translate(0)}
+    25%{transform:translate(160%)}
+    50%{transform:translate(160%, 160%)}
+    75%{transform:translate(0, 160%)}
+  }
+
+
+
+#menuicon{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background: white; 
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }  
+
+ #menuicon::before{
+     content: "";
+     position: absolute;
+     width: 25px;
+     height: 2px;
+     background: black;
+     transform: translateY(-10px);
+     transition: 0.4s;
+     
+ }
+
+ #menuicon::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: black;
+    box-shadow: 0 10px 0 0;
+    transition: 0.4s;
+}
+
+.activemenuicon::before{
+    transform: rotate(45deg);
+    background: red;
+}
+
+.activemenuicon::after{
+    transform: rotate(-45deg);
+    box-shadow: none;
+    background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .container{
         width: 100%;
@@ -16,6 +146,93 @@
 
 
     }
+
+
+
+    
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    margin-left: -15px;
+    margin-right: 5px;
+  }
+  
+
+  .dropdown {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    margin: 0%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    background: rgb(0, 60, 129);
+    min-width: 250px;
+    height: 500%;
+    overflow: scroll;
+    overflow-y: scroll; 
+    overflow-y: hidden;
+    z-index: 1; 
+
+  }
+  
+
+  .dropdown-content a {
+    color: white;
+        padding: 7px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        max-width: 250px;
+   
+    }
+
+
+
+ 
+  .dropdown-content a:hover {
+    color: rgb(255, 255, 255);
+    padding: 7px 16px;
+    text-decoration: underline;
+    background: rgba(0,118,255,0.9);
+    display: block;
+    font-size: 16px;
+    max-width: 250px;
+    }
+
+  .dropdown:hover .dropdown-content   {
+      display: block;
+      left: -15px;
+      padding-bottom: 20px;
+      text-align: center;
+      overflow: scroll;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      max-width: 250px;
+      
+    }
+  
+  
+  .dropdown:hover .dropbtn{
+    background-color: rgb(0, 60, 129);
+  }
+
+
+
+
+
+
 
 
     .navbar{
@@ -55,7 +272,7 @@
 
     }
 
-    nav ul li a{
+    nav ul li {
         text-decoration: none;
         color: white;
         font-size: 18px;
@@ -70,6 +287,24 @@
         text-decoration: underline;
         transition: 0.5s;
     }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        transition: 0.5s;  
+
+
+    }
+
+
+    a:hover{
+        color: #dc143c;
+        font-size: 18px;
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+
 
     .header{
     
@@ -127,21 +362,319 @@
 
     }
 
+    
+    #menuList1{
+        display: block;
+    }
 
-    /*END OF MENU CODE AND HEADER IMAGE & TEXT*/
+    #menulist2{
+        display: none;
+    }
 
+    #menuList{
+        display: none;
+    } 
+    
+    #toggle{
+        display: none;
+    }
+
+    .dropdown2{
+        display: none;
+    }
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    #menuList1{
+        display: none;
+    }
+    #menulist2{
+        display: block;
+    }
+
+    #menuList{
+        display: block;
+    } 
+
+    .dropdown2{
+        display: block;
+    }
+
+    #toggle{
+        display: block;
+    }
+
+    #toggle{
+        position: fixed;
+        top: 37px;
+        right: 6.5%;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background:rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+    }
+    
+
+    .toggle{
+        position: fixed;
+        top: 36px;
+        right: 5%;
+        width: 32px;
+        height: 30px;
+        border-radius: 5px;
+        background:rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+
+
+
+    #toggle:before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #00c911;
+        transform: translateY(-5px);
+        transition: 0.2s;
+        
+    }
+    
+        
+    #toggle{
+        top: 55px;
+        content: '';
+        position: fixed;
+        width: 20px;
+        height: 2px;
+        background:rgba(0, 224, 56, 0.795);
+        transform: translateY(-5px);
+        transition: 0.2s;
+        
+    }
+   
+
+   
+
+
+
+    #toggle:after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #00bd10;
+        transform: translateY(5px);
+        transition: 0.2s;
+        
+    }
+    
+
+    #toggle.active::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+    
+    #toggle.active::after{
+        transform: translateY(0px) rotate(-45deg);
+    }
+    
+    #menulist2{
+        position: fixed;
+        top: 20px;
+        right: -50%;
+        width: 50%;
+        height: 25%;
+        background: #005C97;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: 0.5s;
+        z-index: 1;
+        padding-bottom: 130px;
+    }
+    
+    #menulist2.active{
+        right:0px;
+    }
+    
+    
+    
+    
+    #menulist2 ul{
+        position: relative;
+        margin-top: 50px;
+    
+    }
+    
+    #menulist2 ul li{
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    
+    #menulist2 ul li:hover{
+        background: none;
+    }
+    
+    #menulist2 ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        float: left;
+        letter-spacing: 0px;
+        text-decoration: none;
+        transition: 0.5s;
+        line-height: 9px;
+    }
+    
+    #menulist2 ul li a:hover{
+        color: #cf2345;
+        text-decoration: none;
+        font-size: 14px;
+        float: left;
+        letter-spacing: 0px;
+        text-decoration: underline;
+        transition: 0.5s;
+        line-height: 9px;
+    }
 
     
 
 
 
-    /* OUR SERVICES MOBILE*/
+    .dropbtn2{    
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+    }
+    .dropbtn2:hover{
+        background: rgba(0,118,255,0.9);
+        box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+    }
+    
+
+
+    
+
+      
+      .dropdown2 {
+        margin: auto;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      
+      .dropdown2-content {
+        display: none;
+        position: absolute;
+        margin: 0%;
+        left: 0px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        font-size: 16px;
+        background: rgb(0, 60, 129);
+        min-width: 200px;
+        overflow: auto; 
+        z-index: 1;
+      }
+      
+      .dropdown2-content a {
+        color: white;
+        padding: 7px 16px;
+        text-decoration: underline;
+        display: block;
+        font-size: 16px;
+      }
+      
+
+      .dropdown2-content a:hover {
+        color: rgb(255, 255, 255);
+        padding: 7px 16px;
+        text-decoration: underline;
+        display: block;
+        left: -15px;
+        font-size: 16px;
+      }
+
+      .dropdown2 a:hover{
+          background: rgba(0,118,255,0.9);
+      }
+      .show {display: block;}
+ 
+      
+
+      #cookiePopup {
+        background: white;
+        width: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        box-shadow: 0px 0px 15px #000329;
+        padding: 5px 10px;
+        z-index: 11;
+        font-size: 12px;
+        padding: 20px 20px 20px 20px;
+       
+      }
+      
+        #cookiePopup p a{
+        text-align: left;
+        font-size: 12px;
+        color: #0044ff;
+      }
+      #cookiePopup button{
+        width: 100%;
+        border: navajowhite;
+        background: #097fb7;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        margin-top: 10px;
+      }
+    
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+     
 
     .labtests-col{
         flex-basis: 22%;
         color: white;
         border-radius: 10px;
-        margin-bottom: 30px;
+        margin-bottom:60px;
         padding-bottom: 0px;
         position: relative;
         box-sizing: border-box;
@@ -166,20 +699,42 @@
     }
 
 
-    .labtests-col h5{
-        font-size: 27px;
+  
+    .labtestsrow .labtests-col h1{
+        font-size: 23px;
+        color: white;
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 10px;
+        padding: 10px;
         text-align: center;
-        margin: 10px 0;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        margin: 0px;
+        
+
     }
+
+
+    .labtestsrow .labtests-col h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+       
+    }
+
 
     .labtests h4{
         width: 80%;
         background-color: none;
         margin: auto;
         text-align: center;
-        padding-top: 10px;
+        margin-bottom: 50px;
         font-size: 50px;
         color: white;
         line-height: 60px;
@@ -201,11 +756,7 @@
         padding-bottom: 50px;
     }
 
-    .labtests-col p{
-        color: white;
-        font-size: 22px;
-    }
-
+  
 
     .labtestsrow{
         margin-top: 5px;
@@ -230,29 +781,32 @@
         background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .selectbtn{
+    
+
+
+    .bookbtn{
+        margin: auto;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #1167b1;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 20px;
+        font-size: 16px;
         background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        position: relative;
 
     }
 
 
-    .selectbtn:hover{
+    .bookbtn:hover{
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #dc143c;
         padding: 12px 34px;
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 5px;
         background: #dc143c;
         cursor: pointer;
@@ -263,14 +817,14 @@
 
     .textonwhatsappbtn{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 30px;
+        font-size: 32px;
         background: #228B22;
         cursor: pointer;
         transition: 0.5s;
@@ -280,13 +834,13 @@
 
     .textonwhatsappbtn:hover{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         padding: 12px 34px;
-        font-size: 32px;
+        font-size: 30px;
         border-radius: 5px;
         background: #228B22;
         cursor: pointer;
@@ -298,24 +852,25 @@
 
 
 
+    
     #backtotopbtn {
-      display: ; /* Hidden by default */
-      position: fixed; /* Fixed/sticky position */
-      bottom: 20px; /* Place the button at the bottom of the page */
-      right: 30px; /* Place the button 30px from the right */
-      z-index: 99; /* Make sure it does not overlap */
-      border: none; /* Remove borders */
-      outline: none; /* Remove outline */
-      background-color: #dc143c; /* Set a background color */
-      color: white; /* Text color */
-      cursor: pointer; /* Add a mouse pointer on hover */
-      padding: 15px; /* Some padding */
-      border-radius: 10px; /* Rounded corners */
-      font-size: 18px; /* Increase font size */
+      display: ; 
+      position: fixed;
+      bottom: 20px; 
+      right: 30px;
+      z-index: 99; 
+      border: none; 
+      outline: none; 
+      background-color: #dc143c; 
+      color: white; 
+      cursor: pointer; 
+      padding: 15px; 
+      border-radius: 10px; 
+      font-size: 18px; 
     }
 
     #backtotopbtn:hover {
-        background-color: #dc143c; /* Add a dark-grey background on hover */
+        background-color: #dc143c; 
     }
 
 
@@ -323,7 +878,7 @@
 
 
 
-    /*FOOTER*/
+    
 
 
     footer{
@@ -348,7 +903,7 @@
         vertical-align: top;
     }
 
-    /* Footer left */
+ 
 
     .footer-distributed .footer-left{
         width: 30%;
@@ -360,9 +915,9 @@
         margin: 0;
     }
 
-    /* The company logo */
+    
 
-    .footer-distributed .footer-left img{
+   .footer-distributed .footer-left img{
         width: 60%;
         height: 60%;
     }
@@ -371,7 +926,7 @@
         color:  #e0ac1c;
     }
 
-    /* Footer links */
+   
 
     .footer-distributed .footer-links{
         color:  #ffffff;
@@ -391,15 +946,35 @@
         color:  inherit;
     }
 
-    .footer-distributed .footer-company-name{
+    .bottomfooter{
         color:  #8f9296;
         font-size: 14px;
         font-weight: normal;
         margin: 0;
         text-align: center;
     }
+    
+    .bottomfooter a{
+        color:  #8f9296;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        text-align: center;
+    }
+    
 
-    /* Footer Center */
+    .bottomfooter a:hover{
+        color:  #0059ff;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        text-align: center;
+    }
+
+ 
+
+
+
 
     .footer-distributed .footer-center{
         width: 35%;
@@ -440,13 +1015,13 @@
         line-height: 2px;
     }
 
-    .footer-distributed .footer-center p a{
-        color:  #B72659;
-        text-decoration: none;
+    .footer-distributed .footer-center p a:hover{
+        color:  #0059ff;
+        text-decoration: underline;
     }
 
 
-/* Footer Right */
+
 
 
     .newsletter {
@@ -477,7 +1052,7 @@
     .newsletter input{
         border-radius: 3px;
         background-color: rgba(0,0,0,0.4);
-        width: 300px;
+        width: 230px;
         height: 40px;
         margin-bottom: 36px;
         border:0;
@@ -571,9 +1146,7 @@
 ------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------*/
 
-/*MEDIA QUERY FOR HEADER MOBILE*/
 @media only screen and (min-width: 320px) and (max-width: 480px){
-    
 
     .header{
     
@@ -597,62 +1170,19 @@
     }
 
 
-    nav ul{
-        width: 50%;
-        background: #005C97;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav  ul li{
-        display: block;
-        margin-top: 13px;
-        margin-bottom: 13px;
-       
-
-    }
-
-    nav ul li a{
-        color: white;
-        text-decoration: none;
-       font-size: 15px;
-    }
-
-
-    nav ul li a:hover{
-    color: #dc143c;
-    font-size: 15px;
-    text-decoration: underline;
-    transition: 0.5s;
-    }   
-
+   
     
-    .menu-icon{
-        display: block;
-        margin: auto;
-              
-    }
-
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-        width: 50%;
-        height: 55%;
-        margin-right: 7%;
-        
-    }
-
+      
     .myphulogo{
-    width: 50px;
+    width: 70px;
     cursor: pointer;
+    top: -10px;
+    left: 5%;
+    position: absolute;
     
     }
 
+   
     .maintext{
     width: 80%;
     height: 30px;
@@ -704,9 +1234,9 @@
 
 
 
-/* OUR SERVICES*/
 
-/* MEDIA QUERY FOR OUR SERVICES MOBILE*/
+
+
 @media only screen and (min-width: 320px) and (max-width: 480px){
 
     .labtests-col{
@@ -719,6 +1249,7 @@
         background:rgba(0,0,0,0.3);
         box-sizing: border-box;
         transition: 0s;
+
     
     }
 
@@ -749,20 +1280,33 @@
 
 
 
-    .labtests-col p{
+    .labtestsrow .labtests-col h1{
+        font-size: 23px;
         color: white;
-        padding-bottom: 5px;
-        font-size: 15px;
-    }
-
-    .labtests-col h5{
-        font-size: 20px;
-        padding-top: 5px;
-        padding-bottom: 5px;
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 0px;
+        padding: 10px;
         text-align: center;
-        margin: 0px 0;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        margin: 0px;
+        
+
+    }
+
+
+    .labtestsrow .labtests-col h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        font-weight: 1;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+       
     }
 
 
@@ -780,6 +1324,7 @@
         font-size: 20px;
         color: white;
         line-height: 30px;
+        margin-bottom: 15px;
 
     }
 
@@ -808,40 +1353,57 @@
         background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .selectbtn{
+    .bookbtn{
+        margin: auto;
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
-        padding: 0;
-        font-size: 12px;
-        background: none;
+        padding: 12px 34px;
+        font-size: 16px;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
+
     }
 
 
-    .selectbtn:hover{
+    .bookbtn:hover{
         display: inline-block;
         text-decoration: underline;
-        color: #dc143c;
-        border: none;
-        padding: 0;
-        font-size: 12px;
+        color: white;
+        border: 1px solid #dc143c;
+        padding: 12px 34px;
+        font-size: 16px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
     }
 
 
 
     .textonwhatsappbtn{
         margin: auto;
-        margin-top: 20px;
+        margin-top: 0px;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #228B22;
+        border-radius: 5px;
+        padding: 12px 20px;
+        font-size: 19px;
+        background: #228B22;
+        cursor: pointer;
+        transition: 0.5s;
+
+    }
+
+
+    .textonwhatsappbtn:hover{
+        margin: auto;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
@@ -855,24 +1417,25 @@
 
     }
 
-
     
 }
 
 
 
 
-/* MEDIA FOOTER MOBILE */
+
+
 
 @media only screen and (min-width: 320px) and (max-width: 480px)   {
 
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
     .footer-distributed .footer-right{
-        display: block;
+        display: flex;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         text-align: center;
+        flex-flow: column;
     }
 
     .footer-distributed .footer-center i{
@@ -884,6 +1447,15 @@
         font-family: 'Poppins', sans-serif;
     }
    
+
+.footer-distributed .footer-left img{
+      width: 220px;
+      height: 220px;
+      position: relative;
+      margin: auto;
+      text-align: center;
+    }
+
 .footer-distributed .footer-center p {
     display: inline-block;
     color: #ffffff;
@@ -894,7 +1466,7 @@
 }
 
 
-  /* Footer Right */
+  
 
 
 .newsletter {
@@ -905,7 +1477,7 @@
     padding: 30px 10px;
     border-radius: 5px;
     color: white;
-  
+  margin-top: 40px;
 }
 
 .newsletter p{
@@ -994,28 +1566,26 @@ footer { position: static; }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
     #backtotopbtn {
-      display: ; /* Hidden by default */
-      position: fixed; /* Fixed/sticky position */
-      bottom: 20px; /* Place the button at the bottom of the page */
-      right: 10px; /* Place the button 30px from the right */
-      z-index: 99; /* Make sure it does not overlap */
-      border: none; /* Remove borders */
-      outline: none; /* Remove outline */
-      background-color: #dc143c; /* Set a background color */
-      color: white; /* Text color */
-      cursor: pointer; /* Add a mouse pointer on hover */
-      padding: 8px; /* Some padding */
-      border-radius: 10px; /* Rounded corners */
-      font-size: 12px; /* Increase font size */
+      display: ; 
+      position: fixed; 
+      bottom: 20px; 
+      right: 10px;
+      z-index: 99; 
+      border: none; 
+      outline: none; 
+      background-color: #dc143c;
+      color: white; 
+      cursor: pointer; 
+      padding: 8px; 
+      border-radius: 10px; 
+      font-size: 12px; 
     }
 
     #backtotopbtn:hover {
-        background-color: #dc143c; /* Add a dark-grey background on hover */
+        background-color: #dc143c; 
     }
 
 }
-
-
 
 
 /*---------------------------------------------------------------------------------------------------------
@@ -1030,11 +1600,284 @@ footer { position: static; }
 ---------------------------------------------------------------------------------------------------------------*/
 
 
-/* MEDIA QUERY FOR HEADER IPADS. TABLETS*/
+
 @media only screen and (min-width: 481px) and (max-width: 768px){
     
+    #menuList1{
+        display: none;
+    }
+    #menulist2{
+        display: block;
+    }
 
-    .header{
+    #menuList{
+        display: block;
+    } 
+
+    .dropdown2{
+        display: block;
+    }
+
+    #toggle{
+        display: block;
+    }
+
+    #toggle{
+        position: fixed;
+        top: 47px;
+        right: 7%;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        background:rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+    }
+    
+
+    .toggle{
+        position: fixed;
+        top: 56px;
+        right: 6%;
+        width: 32px;
+        height: 30px;
+        border-radius: 5px;
+        background:rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        
+    }
+
+
+
+    #toggle:before{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #00c911;
+        transform: translateY(-5px);
+        transition: 0.2s;
+        
+    }
+    
+        
+    #toggle{
+        top: 75px;
+        content: '';
+        position: fixed;
+        width: 20px;
+        height: 2px;
+        background:rgba(0, 224, 56, 0.795);
+        transform: translateY(-5px);
+        transition: 0.2s;
+        
+    }
+   
+
+   
+
+
+
+    #toggle:after{
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        background: #00bd10;
+        transform: translateY(5px);
+        transition: 0.2s;
+        
+    }
+    
+
+    #toggle.active::before{
+        transform: translateY(0px) rotate(45deg);
+    }
+    
+    #toggle.active::after{
+        transform: translateY(0px) rotate(-45deg);
+    }
+    
+    #menulist2{
+        position: fixed;
+        top: 40px;
+        right: -50%;
+        width: 30%;
+        height: 55%;
+        background: #005C97;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: 0.5s;
+        z-index: 1;
+        padding-bottom: 130px;
+    }
+    
+    #menulist2.active{
+        right:0px;
+    }
+    
+    
+    
+    
+    #menulist2 ul{
+        position: relative;
+        margin-top: 50px;
+    
+    }
+    
+    #menulist2 ul li{
+        list-style: none;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    
+    #menulist2 ul li:hover{
+        background: none;
+    }
+    
+    #menulist2 ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        float: left;
+        letter-spacing: 0px;
+        text-decoration: none;
+        transition: 0.5s;
+        line-height: 9px;
+    }
+    
+    #menulist2 ul li a:hover{
+        color: #cf2345;
+        text-decoration: none;
+        font-size: 14px;
+        float: left;
+        letter-spacing: 0px;
+        text-decoration: underline;
+        transition: 0.5s;
+        line-height: 9px;
+    }
+
+    
+
+
+
+    .dropbtn2{    
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: none;
+    padding: 0 56px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 7px;
+    background-color: #0070f3;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+    transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+    }
+    .dropbtn2:hover{
+        background: rgba(0,118,255,0.9);
+        box-shadow: 0 6px 20px rgb(0 118 255 / 23%);
+    }
+    
+
+
+    
+
+      
+      .dropdown2 {
+        margin: auto;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+      
+      .dropdown2-content {
+        display: none;
+        position: absolute;
+        margin: 0%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        font-size: 16px;
+        background: rgb(0, 60, 129);
+        min-width: 200px;
+        overflow: auto; 
+        z-index: 1;
+      }
+      
+      .dropdown2-content a {
+        color: white;
+        padding: 7px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+      }
+      
+
+      .dropdown2-content a:hover {
+        color: rgb(255, 255, 255);
+        padding: 7px 16px;
+        text-decoration: underline;
+        display: block;
+        font-size: 16px;
+      }
+
+      .dropdown2 a:hover{
+          background: rgba(0,118,255,0.9);
+      }
+      .show {display: block;}
+     
+
+
+
+
+      #cookiePopup {
+        background: white;
+        width: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        box-shadow: 0px 0px 15px #000329;
+        padding: 5px 10px;
+        z-index: 11;
+        font-size: 15px;
+        padding: 20px 20px 20px 20px;
+       
+      }
+      
+        #cookiePopup p a{
+        text-align: left;
+        font-size: 15px;
+        color: #0044ff;
+      }
+      #cookiePopup button{
+        width: 100%;
+        border: navajowhite;
+        background: #097fb7;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 15px;
+        margin-top: 10px;
+      }
+    
+
+
+
+
+   .header{
     
     width: 100%;
     height: 300PX;
@@ -1056,61 +1899,21 @@ footer { position: static; }
     }
 
 
-    nav ul{
-        width: 50%;
-        background: #005C97;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav  ul li{
-        display: block;
-        margin-top: 13px;
-        margin-bottom: 13px;
-       
-
-    }
-
-    nav ul li a{
-        color: white;
-        text-decoration: none;
-       font-size: 18px;
-       line-height: 24px;
-    }
-
-
-    nav ul li a:hover{
-    color: #dc143c;
-    font-size: 17px;
-    text-decoration: underline;
    
-    }   
 
     
     .menu-icon{
         display: block;
         margin: auto;
         width: 35px;
+        
               
     }
 
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-        width: 35%;
-        height: 120%;
-        margin-right: 7%;
-        margin-top: 10px;
-        
-    }
+
 
     .myphulogo{
-    width: 60px;
+    width: 80px;
     cursor: pointer;
     
     }
@@ -1166,7 +1969,9 @@ footer { position: static; }
 
 
 
-/* MEDIA QUERY FOR OUR SERVICES IPADS. TABLETS*/
+    
+
+
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
     .labtests-col{
@@ -1177,6 +1982,7 @@ footer { position: static; }
         position: relative;
         overflow: hidden;
         background:rgba(0,0,0,0.3);
+
         box-sizing: border-box;
         transition: 0s;
     
@@ -1210,20 +2016,32 @@ footer { position: static; }
 
 
 
-    .labtests-col p{
-        color: white;
-        padding-bottom: 5px;
-        font-size: 24px;
-    }
-
-    .labtests-col h5{
-        font-size: 35px;
-        padding-top: 5px;
-        padding-bottom: 5px;
+    .labtestsrow .labtests-col h1{
+        font-size: 23px;
+      
         font-style: bold;
         font-weight: 800;
+        padding-bottom: 10px;
+        padding: 10px;
         text-align: center;
-        margin: 0px 0;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        margin: 0px;
+        
+
+    }
+
+
+    .labtestsrow .labtests-col h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+       
     }
 
 
@@ -1241,6 +2059,7 @@ footer { position: static; }
         font-size: 30px;
         color: white;
         line-height: 40px;
+        margin-bottom: 20px;
 
     }
 
@@ -1269,49 +2088,54 @@ footer { position: static; }
         background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .selectbtn{
+    
+
+
+    .bookbtn{
+        margin: auto;
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
-        padding: 0;
-        font-size: 20px;
-        background: none;
+        padding: 12px 34px;
+        font-size: 16px;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
+
     }
 
 
-    .selectbtn:hover{
+    .bookbtn:hover{
         display: inline-block;
-        text-decoration: underline;
-        color: #dc143c;
-        border: none;
-        padding: 0;
-        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #dc143c;
+        padding: 12px 34px;
+        font-size: 16px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
+
+
+
+
 
 
 
     .textonwhatsappbtn{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 25px;
+        font-size: 27px;
         background: #228B22;
         cursor: pointer;
         transition: 0.5s;
@@ -1321,13 +2145,13 @@ footer { position: static; }
 
     .textonwhatsappbtn:hover{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         padding: 12px 34px;
-        font-size: 27px;
+        font-size: 25px;
         border-radius: 5px;
         background: #228B22;
         cursor: pointer;
@@ -1345,18 +2169,32 @@ footer { position: static; }
 
 
 
-/* MEDIA FOOTER IPAD, TABLET */
+
+
+
+
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
-    .footer-distributed .footer-left,
+  .footer-distributed .footer-left,
     .footer-distributed .footer-center,
     .footer-distributed .footer-right{
-        display: block;
+        display: flex;
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         text-align: center;
+        flex-flow: column;
     }
+
+    .footer-distributed .footer-left img{
+      width: 250px;
+      height: 250px;
+      position: relative;
+      margin: auto;
+      text-align: center;
+    }
+
+
 
     .footer-distributed .footer-center i{
         margin-left: 0;
@@ -1378,7 +2216,7 @@ footer { position: static; }
 }
 
 
-  /* Footer Right */
+  
 
 
 .newsletter {
@@ -1389,6 +2227,7 @@ footer { position: static; }
     padding: 30px 10px;
     border-radius: 5px;
     color: white;
+    margin-top: 40px;
   
 }
 
@@ -1410,7 +2249,7 @@ footer { position: static; }
 .newsletter input{
     border-radius: 3px;
     background-color: rgba(0,0,0,0.4);
-    width: 190px;
+    width: 320px;
     height: 40px;
     margin-bottom: 36px;
     border:0;
@@ -1478,23 +2317,23 @@ footer { position: static; }
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
     #backtotopbtn {
-      display: ; /* Hidden by default */
-      position: fixed; /* Fixed/sticky position */
-      bottom: 20px; /* Place the button at the bottom of the page */
-      right: 10px; /* Place the button 30px from the right */
-      z-index: 99; /* Make sure it does not overlap */
-      border: none; /* Remove borders */
-      outline: none; /* Remove outline */
-      background-color: #dc143c; /* Set a background color */
-      color: white; /* Text color */
-      cursor: pointer; /* Add a mouse pointer on hover */
-      padding: 8px; /* Some padding */
-      border-radius: 10px; /* Rounded corners */
-      font-size: 18px; /* Increase font size */
+      display: ; 
+      position: fixed; 
+      bottom: 20px; 
+      right: 10px; 
+      z-index: 99; 
+      border: none; 
+      outline: none; 
+      background-color: #dc143c; 
+      color: white; 
+      cursor: pointer; 
+      padding: 8px;
+      border-radius: 10px; 
+      font-size: 18px; 
     }
 
     #backtotopbtn:hover {
-        background-color: #dc143c; /* Add a dark-grey background on hover */
+        background-color: #dc143c; 
     }
 
 }
@@ -1518,7 +2357,7 @@ footer { position: static; }
 
 
 
-/* MEDIA QUERY FOR HEADER SMALL SCERANS, LAPTOPS*/
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {   
 
    .container{
@@ -1566,14 +2405,13 @@ footer { position: static; }
     nav ul li{
         list-style: none;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 8px;
 
     }
-
     nav ul li a{
         text-decoration: none;
         color: white;
-        font-size: 16px;
+        font-size: 15px;
         transition: 0.5s;  
 
 
@@ -1581,11 +2419,21 @@ footer { position: static; }
 
     nav ul li a:hover{
         color: #dc143c;
-        font-size: 16px;
+        font-size: 15px;
         text-decoration: underline;
         transition: 0.5s;
     }
 
+
+
+
+
+
+
+
+
+
+    
     .header{
     
         width: 100%;
@@ -1645,13 +2493,56 @@ footer { position: static; }
 
     }
 
+
+
+    
+    #cookiePopup {
+        background: white;
+        width: 50%;
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+        box-shadow: 0px 0px 15px #000329;
+        padding: 5px 10px;
+        z-index: 11;
+        font-size: 16px;
+        padding: 20px 20px 20px 20px;
+       
+      }
+      
+        #cookiePopup p a{
+        text-align: left;
+        font-size: 16px;
+        color: #0044ff;
+      }
+      #cookiePopup button{
+        width: 100%;
+        border: navajowhite;
+        background: #097fb7;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
 
-/* OUR SERVICES*/
 
-/* MEDIA QUERY FOR OUR SERVICES SMALL SCERANS, LAPTOPS*/
 @media only screen and (min-width: 769px) and (max-width: 1024px){
 
     .labtests-col{
@@ -1661,7 +2552,7 @@ footer { position: static; }
         margin-bottom: 30px;
         position: relative;
         overflow: hidden;
-        background:rgba(0,0,0,0.4);
+        background:rgba(0,0,0,0.3);
         box-sizing: border-box;
         transition: 0s;
     
@@ -1693,21 +2584,33 @@ footer { position: static; }
 
 
 
-    .labtests-col p{
+    .optometryrow .optometry-col h2{
         color: white;
-        padding-bottom: 5px;
-        font-size: 20px;
-    }
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+       
+      }
 
-    .labtests-col h5{
-        font-size: 27px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-style: bold;
-        font-weight: 800;
-        text-align: center;
-        margin: 0px 0;
-    }
+  
+.optometryrow .optometry-col h1{
+    font-size: 23px;
+  
+    font-style: bold;
+    font-weight: 800;
+    padding-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    margin: 0px;
+    
+  
+  }
 
 
     .labtests h1{
@@ -1721,10 +2624,11 @@ footer { position: static; }
         background-color: none;
         margin: auto;
         text-align: center;
-        padding-top: 40px;
+       
         font-size: 30px;
         color: white;
         line-height: 40px;
+        margin-bottom: 50px;
 
     }
 
@@ -1753,50 +2657,56 @@ footer { position: static; }
         background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .selectbtn{
+    
+
+
+
+    .bookbtn{
+        margin: auto;
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
-        padding: 0;
-        font-size: 20px;
-        background: none;
+        padding: 12px 34px;
+        font-size: 16px;
+        background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
+
     }
 
 
-    .selectbtn:hover{
+    .bookbtn:hover{
         display: inline-block;
-        text-decoration: underline;
-        color: #dc143c;
-        border: none;
-        padding: 0;
-        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        border: 1px solid #dc143c;
+        padding: 12px 34px;
+        font-size: 17px;
         border-radius: 5px;
-        background: none;
+        background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
+
+
+
+
 
 
 
     
     .textonwhatsappbtn{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 30px;
+        font-size: 32px;
         background: #228B22;
         cursor: pointer;
         transition: 0.5s;
@@ -1806,13 +2716,13 @@ footer { position: static; }
 
     .textonwhatsappbtn:hover{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #228B22;
         padding: 12px 34px;
-        font-size: 32px;
+        font-size: 30px;
         border-radius: 5px;
         background: #228B22;
         cursor: pointer;
@@ -1826,7 +2736,10 @@ footer { position: static; }
 
 
 
-/* MEDIA QUERY FOR BECOMEA PARTNER SMALL SCERANS, LAPTOPS*/
+
+
+
+
 @media only screen and (min-width: 769px) and (max-width: 1024px){
 
 footer{
@@ -1851,11 +2764,15 @@ footer{
     vertical-align: top;
 }
 
-/* Footer left */
+
 
 .footer-distributed .footer-left{
     width: 25%;
 }
+
+
+
+
 
 .footer-distributed .footer-left h3{
     color:  #ffffff;
@@ -1864,17 +2781,22 @@ footer{
     font-family: 'Poppins', sans-serif
 }
 
-/* The company logo */
+
 
 .footer-distributed .footer-left img{
-    width: 50%;
-}
+      width: 180px;
+      height: 180px;
+      position: relative;
+      margin: auto;
+      left: 0px;
+      text-align: left;
+    }
 
 .footer-distributed h3 span{
     color:  #e0ac1c;
 }
 
-/* Footer links */
+
 
 .footer-distributed .footer-links{
     color:  #ffffff;
@@ -1902,10 +2824,11 @@ footer{
     text-align: center;
 }
 
-/* Footer Center */
+
 
 .footer-distributed .footer-center{
-    width: 27%;
+    width: 30%;
+
 
 }
 
@@ -1950,7 +2873,7 @@ footer{
 }
 
 
-/* Footer Right */
+
 
 
 .newsletter {
@@ -2068,26 +2991,37 @@ footer{
 @media only screen and (min-width: 769px) and (max-width: 1024px){
 
     #backtotopbtn {
-      display: ; /* Hidden by default */
-      position: fixed; /* Fixed/sticky position */
-      bottom: 20px; /* Place the button at the bottom of the page */
-      right: 30px; /* Place the button 30px from the right */
-      z-index: 99; /* Make sure it does not overlap */
-      border: none; /* Remove borders */
-      outline: none; /* Remove outline */
-      background-color: #dc143c; /* Set a background color */
-      color: white; /* Text color */
-      cursor: pointer; /* Add a mouse pointer on hover */
-      padding: 8px; /* Some padding */
-      border-radius: 10px; /* Rounded corners */
-      font-size: 18px; /* Increase font size */
+      display: ; 
+      position: fixed;
+      bottom: 20px; 
+      right: 30px; 
+      z-index: 99; 
+      border: none;
+      outline: none; 
+      background-color: #dc143c;
+      color: white; 
+      cursor: pointer; 
+      padding: 8px; 
+      border-radius: 10px; 
+      font-size: 18px; 
     }
 
     #backtotopbtn:hover {
-        background-color: #dc143c; /* Add a dark-grey background on hover */
+        background-color: #dc143c; 
     }
 
+
+
+
+
+
+
+
+
+
+    
 }
 
 
 
+}

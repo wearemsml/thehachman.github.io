@@ -590,7 +590,7 @@ html{
         left: 0px;
         padding-top: 10px;
         padding-bottom: 20px;
-        text-decoration: underline;
+        text-decoration: none;
         font-size: 16px;
         background: rgb(0, 60, 129);
         min-width: 200px;
@@ -668,10 +668,9 @@ html{
 
 
 
+     
 
-   
-
-    .ourservices-col{
+    .hypertension-col{
         flex-basis: 22%;
         color: white;
         border-radius: 10px;
@@ -685,13 +684,13 @@ html{
     
     }
 
-    .ourservices-col:hover{
+    .hypertension-col:hover{
    
         box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
         transition: 0.5s;
     }
 
-    .ourservices-col img{
+    .hypertension-col img{
         width: 100%;
         border-radius: 10px;
         top: 0;
@@ -700,49 +699,24 @@ html{
     }
 
 
-    .ourservicesrow .ourservices-col h1{
+  
+    .hypertensionrow .hypertension-col h1{
         font-size: 23px;
-        padding: 10px;
+        color: white;
         font-style: bold;
         font-weight: 800;
         padding-bottom: 10px;
+        padding: 10px;
         text-align: center;
         margin-bottom: 0px;
         margin-top: 15px;
         margin: 0px;
         
-    
-    }
-    
-
-    .ourservices h4{
-        width: 80%;
-        background-color: none;
-        margin: auto;
-        text-align: center;
-        padding-top: 10px;
-        font-size: 50px;
-        color: white;
-        line-height: 60px;
 
     }
 
-    .ourservices{
-        width: 80%;
-        background-color: none;
-        margin: auto;
-        text-align: center;
-        padding-top: 90px;
-        font-size: 65px;
-        color: white;
-    }
 
-    .ourservices h1{
-        font-size: 100px;
-        padding-bottom: 50px;
-    }
-
-    .ourservicesrow .ourservices-col h2{
+    .hypertensionrow .hypertension-col h2{
         color: white;
         font-family: Arial, Helvetica, sans-serif ;
         font-size: 18px;
@@ -753,9 +727,38 @@ html{
         margin-top: 0px;
        
     }
-    
 
-    .ourservicesrow{
+
+    .hypertension h4{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 50px;
+        color: white;
+        line-height: 60px;
+
+    }
+
+    .hypertension{
+        width: 80%;
+        background-color: none;
+        margin: auto;
+        text-align: center;
+        padding-top: 90px;
+        font-size: 65px;
+        color: white;
+    }
+
+    .hypertension h1{
+        font-size: 100px;
+        padding-bottom: 50px;
+    }
+
+  
+
+    .hypertensionrow{
         margin-top: 5px;
         display: flex;
         justify-content: space-between;
@@ -765,7 +768,7 @@ html{
     }
 
 
-    .ourservicesBG{
+    .hypertensionBG{
         width: 100%;
         background-size: cover;
         margin: auto;
@@ -778,7 +781,10 @@ html{
         background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .selectbtn{
+    
+
+
+    .bookbtn{
         margin: auto;
         display: inline-block;
         text-decoration: none;
@@ -786,7 +792,7 @@ html{
         border: 1px solid #1167b1;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 20px;
+        font-size: 16px;
         background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
@@ -794,13 +800,13 @@ html{
     }
 
 
-    .selectbtn:hover{
+    .bookbtn:hover{
         display: inline-block;
         text-decoration: none;
         color: white;
         border: 1px solid #dc143c;
         padding: 12px 34px;
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 5px;
         background: #dc143c;
         cursor: pointer;
@@ -846,7 +852,7 @@ html{
 
 
 
-   
+    
     #backtotopbtn {
       display: ; 
       position: fixed;
@@ -1233,7 +1239,7 @@ html{
 
 @media only screen and (min-width: 320px) and (max-width: 480px){
 
-    .ourservices-col{
+    .hypertension-col{
         flex-basis: 100%;
         color: white;
         border-radius: 10px;
@@ -1247,13 +1253,13 @@ html{
     
     }
 
-    .ourservices-col:hover{
+    .hypertension-col:hover{
    
         box-shadow: none;
         transition: 0s;
     }
 
-    .ourservices-col img{
+    .hypertension-col img{
      width: 50%;
         border-radius: 10px;
         top: 0;
@@ -1262,7 +1268,7 @@ html{
     }
 
 
-    .ourservices{
+    .hypertension{
         width: 80%;
         background-color: none;
         margin: auto;
@@ -1274,21 +1280,7 @@ html{
 
 
 
-    .ourservicesrow .ourservices-col h2{
-        color: white;
-        font-family: Arial, Helvetica, sans-serif ;
-        font-size: 18px;
-        font-weight: 1;
-        margin: 0px;
-        padding: 10px;
-        line-height: 25px;
-        margin-top: 0px;
-        margin-bottom: 10px;
-      
-       
-    }
-
-    .ourservicesrow .ourservices-col h1{
+    .hypertensionrow .hypertension-col h1{
         font-size: 23px;
         color: white;
         font-style: bold;
@@ -1300,17 +1292,30 @@ html{
         margin-top: 15px;
         margin: 0px;
         
-        
-    
+
     }
 
 
-    .ourservices h1{
+    .hypertensionrow .hypertension-col h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        font-weight: 1;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+       
+    }
+
+
+    .hypertension h1{
         font-size: 40px;
         padding-bottom: 10px;
     }
 
-    .ourservices h4{
+    .hypertension h4{
         width: 80%;
         background-color: none;
         margin: auto;
@@ -1319,11 +1324,12 @@ html{
         font-size: 20px;
         color: white;
         line-height: 30px;
+        margin-bottom: 15px;
 
     }
 
 
-    .ourservicesrow{
+    .hypertensionrow{
         padding-top: 0px;
         margin-top: 5px;
         display: flex;
@@ -1334,7 +1340,7 @@ html{
  
         }
 
-    .ourservicesBG{
+    .hypertensionBG{
         width: 100%;
         background-size: cover;
         margin: auto;
@@ -1347,34 +1353,33 @@ html{
         background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .selectbtn{
+    .bookbtn{
+        margin: auto;
         display: inline-block;
         text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
-        padding: 7px 20px;
-        font-size: 12px;
+        padding: 12px 34px;
+        font-size: 16px;
         background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 5px;
+
     }
 
 
-    .selectbtn:hover{
+    .bookbtn:hover{
         display: inline-block;
         text-decoration: underline;
         color: white;
-        border: none;
-        padding: 0;
-        font-size: 12px;
-        padding: 7px 20px;
+        border: 1px solid #dc143c;
+        padding: 12px 34px;
+        font-size: 16px;
         border-radius: 5px;
         background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 5px;
     }
 
 
@@ -1414,7 +1419,6 @@ html{
 
     
 }
-
 
 
 
@@ -1815,7 +1819,7 @@ footer { position: static; }
       .dropdown2-content a {
         color: white;
         padding: 7px 16px;
-        text-decoration: underline;
+        text-decoration: none;
         display: block;
         font-size: 16px;
       }
@@ -1873,25 +1877,7 @@ footer { position: static; }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .header{
+   .header{
     
     width: 100%;
     height: 300PX;
@@ -1983,14 +1969,12 @@ footer { position: static; }
 
 
 
-
-
-
+    
 
 
 @media only screen and (min-width: 481px) and (max-width: 768px){
 
-    .ourservices-col{
+    .hypertension-col{
         flex-basis: 100%;
         color: white;
         border-radius: 10px;
@@ -2004,13 +1988,13 @@ footer { position: static; }
     
     }
 
-    .ourservices-col:hover{
+    .hypertension-col:hover{
    
         box-shadow: none;
         transition: 0s;
     }
 
-    .ourservices-col img{
+    .hypertension-col img{
         display: block;
         width: 50%;
         margin: auto;
@@ -2020,7 +2004,7 @@ footer { position: static; }
     }
 
 
-    .ourservices{
+    .hypertension{
         width: 80%;
         background-color: none;
         margin: auto;
@@ -2032,40 +2016,41 @@ footer { position: static; }
 
 
 
-    .ourservicesrow .ourservices-col h2{
-        color: white;
-        font-family: Arial, Helvetica, sans-serif ;
-        font-size: 24px;
-        font-weight: 300;
-        margin: 0px;
-        padding: 10px;
-        line-height: 25px;
-        margin-top: 0px;
-        margin-bottom: 10px;
-       
-    }
-    
-
-    .ourservicesrow .ourservices-col h1{
-        font-size: 35px;
+    .hypertensionrow .hypertension-col h1{
+        font-size: 23px;
       
         font-style: bold;
         font-weight: 800;
         padding-bottom: 10px;
+        padding: 10px;
         text-align: center;
         margin-bottom: 0px;
         margin-top: 15px;
         margin: 0px;
         
-    
+
     }
 
-    .ourservices h1{
+
+    .hypertensionrow .hypertension-col h2{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0px;
+        padding: 10px;
+        line-height: 25px;
+        margin-top: 0px;
+       
+    }
+
+
+    .hypertension h1{
         font-size: 60px;
         padding-bottom: 10px;
     }
 
-    .ourservices h4{
+    .hypertension h4{
         width: 80%;
         background-color: none;
         margin: auto;
@@ -2074,11 +2059,12 @@ footer { position: static; }
         font-size: 30px;
         color: white;
         line-height: 40px;
+        margin-bottom: 20px;
 
     }
 
 
-    .ourservicesrow{
+    .hypertensionrow{
         padding-top: 0px;
         margin-top: 5px;
         display: flex;
@@ -2089,7 +2075,7 @@ footer { position: static; }
  
         }
 
-    .ourservicesBG{
+    .hypertensionBG{
         width: 100%;
         background-size: cover;
         margin: auto;
@@ -2102,36 +2088,41 @@ footer { position: static; }
         background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .selectbtn{
+    
+
+
+    .bookbtn{
+        margin: auto;
         display: inline-block;
         text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 20px;
+        font-size: 16px;
         background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
+
     }
 
 
-    .selectbtn:hover{
+    .bookbtn:hover{
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #dc143c;
         padding: 12px 34px;
-        font-size: 20px;
+        font-size: 16px;
         border-radius: 5px;
         background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
+
+
+
+
 
 
 
@@ -2171,7 +2162,6 @@ footer { position: static; }
 
 
 }
-
 
 
 
@@ -2418,7 +2408,6 @@ footer { position: static; }
         margin-right: 8px;
 
     }
-
     nav ul li a{
         text-decoration: none;
         color: white;
@@ -2434,6 +2423,7 @@ footer { position: static; }
         text-decoration: underline;
         transition: 0.5s;
     }
+
 
 
 
@@ -2540,15 +2530,22 @@ footer { position: static; }
 
 
 
-}
 
+
+
+
+
+
+
+
+}
 
 
 
 
 @media only screen and (min-width: 769px) and (max-width: 1024px){
 
-    .ourservices-col{
+    .hypertension-col{
         flex-basis:46%;
         color: white;
         border-radius: 10px;
@@ -2561,13 +2558,13 @@ footer { position: static; }
     
     }
 
-    .ourservices-col:hover{
+    .hypertension-col:hover{
    
         box-shadow: none;
         transition: 0s;
     }
 
-    .ourservices-col img{
+    .hypertension-col img{
         width: 60%;
         border-radius: 10px;
         top: 0;
@@ -2575,7 +2572,7 @@ footer { position: static; }
     }
 
 
-    .ourservices{
+    .hypertension{
         width: 80%;
         background-color: none;
         margin: auto;
@@ -2587,56 +2584,55 @@ footer { position: static; }
 
 
 
-    .ourservicesrow .ourservices-col h2{
+    .hypertensionrow .hypertension-col h2{
         color: white;
         font-family: Arial, Helvetica, sans-serif ;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 300;
         margin: 0px;
         padding: 10px;
         line-height: 25px;
         margin-top: 0px;
-        margin-bottom: 10px;
        
-    }
-    
+      }
 
-    .ourservicesrow .ourservices-col h1{
-        font-size: 27px;
-        padding-top: 0px;
+    .hypertensionrow .hypertension-col h1{
+        font-size: 23px;
+      
         font-style: bold;
         font-weight: 800;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
+        padding: 10px;
         text-align: center;
         margin-bottom: 0px;
-        margin-top: 0px;
+        margin-top: 15px;
         margin: 0px;
         
-    
-    }
+      
+      }
 
 
-
-    .ourservices h1{
+    .hypertension h1{
         font-size: 60px;
         padding-bottom: 40px;
         padding-top: 30px;
     }
 
-    .ourservices h4{
+    .hypertension h4{
         width: 80%;
         background-color: none;
         margin: auto;
         text-align: center;
-        padding-top: 40px;
+       
         font-size: 30px;
         color: white;
         line-height: 40px;
+        margin-bottom: 50px;
 
     }
 
 
-    .ourservicesrow{
+    .hypertensionrow{
         padding-top: 0px;
         margin-top: 5px;
         display: flex;
@@ -2647,7 +2643,7 @@ footer { position: static; }
  
         }
 
-    .ourservicesBG{
+    .hypertensionBG{
         width: 100%;
         background-size: cover;
         margin: auto;
@@ -2660,36 +2656,42 @@ footer { position: static; }
         background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
-    .selectbtn{
+    
+
+
+
+    .bookbtn{
+        margin: auto;
         display: inline-block;
         text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #1167b1;
         border-radius: 5px;
         padding: 12px 34px;
-        font-size: 20px;
+        font-size: 16px;
         background: #1167b1;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
+
     }
 
 
-    .selectbtn:hover{
+    .bookbtn:hover{
         display: inline-block;
-        text-decoration: underline;
+        text-decoration: none;
         color: white;
-        border: none;
+        border: 1px solid #dc143c;
         padding: 12px 34px;
-        font-size: 20px;
+        font-size: 17px;
         border-radius: 5px;
         background: #dc143c;
         cursor: pointer;
         transition: 0.5s;
-        padding-bottom: 10px;
-        padding-top: 10px;
     }
+
+
+
+
 
 
 
@@ -2728,6 +2730,7 @@ footer { position: static; }
      
 
 }
+
 
 
 

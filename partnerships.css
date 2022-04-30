@@ -2203,7 +2203,7 @@ footer { position: static; }
     nav ul li a{
         text-decoration: none;
         color: white;
-        font-size: 16px;
+        font-size: 15px;
         transition: 0.5s;  
 
 
@@ -2211,7 +2211,7 @@ footer { position: static; }
 
     nav ul li a:hover{
         color: #dc143c;
-        font-size: 16px;
+        font-size: 15px;
         text-decoration: underline;
         transition: 0.5s;
     }
