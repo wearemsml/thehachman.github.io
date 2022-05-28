@@ -1270,13 +1270,7 @@ html{
         transition: 0s;
     }
 
-    .fitnessandnutrition-col img{
-     width: 50%;
-        border-radius: 10px;
-        top: 0;
-       left: 0;
-
-    }
+   
 
 
     .fitnessandnutrition{
@@ -2007,7 +2001,7 @@ footer { position: static; }
 
     .fitnessandnutrition-col img{
         display: block;
-        width: 50%;
+        width: 100%;
         margin: auto;
         border-radius: 10px;
         top: 0;
@@ -2685,12 +2679,7 @@ footer { position: static; }
         transition: 0s;
     }
 
-    .fitnessandnutrition-col img{
-        width: 60%;
-        border-radius: 10px;
-        top: 0;
-        left: 0;
-    }
+  
 
 
     .fitnessandnutrition{

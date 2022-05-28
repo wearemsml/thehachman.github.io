@@ -1266,13 +1266,7 @@ html{
         transition: 0s;
     }
 
-    .frames-col img{
-     width: 100%;
-        border-radius: 10px;
-        top: 0;
-       left: 0;
-
-    }
+   
 
 
     .frames{
